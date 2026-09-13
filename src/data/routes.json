@@ -1,0 +1,40 @@
+[
+  {
+    "route_id": "RT-CHI-ATL-01",
+    "name": "Chicago to Atlanta Primary Interstate Corridor",
+    "origin": "Chicago, IL",
+    "destination": "Atlanta, GA",
+    "distance_km": 1150.0,
+    "typical_duration_hours": 11.5,
+    "highways": ["I-65 S", "I-24 E", "I-75 S"],
+    "waypoints": [
+      {"name": "Indianapolis, IN", "lat": 39.7684, "lon": -86.1581},
+      {"name": "Louisville, KY", "lat": 38.2527, "lon": -85.7585},
+      {"name": "Nashville, TN", "lat": 36.1627, "lon": -86.7816},
+      {"name": "Chattanooga, TN", "lat": 35.0456, "lon": -85.3097}
+    ],
+    "cold_storage_depots": [
+      {"name": "Midwest Cold Vault - Indianapolis", "lat": 39.7501, "lon": -86.1302},
+      {"name": "Dixie Freezer Hub - Nashville", "lat": 36.1402, "lon": -86.7501}
+    ]
+  },
+  {
+    "route_id": "RT-SEA-DEN-01",
+    "name": "Seattle to Denver Trans-Mountain Corridor",
+    "origin": "Seattle, WA",
+    "destination": "Denver, CO",
+    "distance_km": 2100.0,
+    "typical_duration_hours": 20.0,
+    "highways": ["I-90 E", "I-82 E", "I-84 E", "I-80 E", "I-25 S"],
+    "waypoints": [
+      {"name": "Ellensburg, WA", "lat": 46.9965, "lon": -120.5478},
+      {"name": "Boise, ID", "lat": 43.6150, "lon": -116.2023},
+      {"name": "Salt Lake City, UT", "lat": 40.7608, "lon": -111.8910},
+      {"name": "Cheyenne, WY", "lat": 41.1400, "lon": -104.8202}
+    ],
+    "cold_storage_depots": [
+      {"name": "Intermountain Frozen Logistics - Boise", "lat": 43.6010, "lon": -116.2100},
+      {"name": "Rocky Mountain Cold Chain - Salt Lake City", "lat": 40.7500, "lon": -111.8700}
+    ]
+  }
+]

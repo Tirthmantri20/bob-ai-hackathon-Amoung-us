@@ -1,0 +1,42 @@
+[
+  {
+    "station_id": "WX-CHI-01",
+    "location": "Chicago, IL",
+    "ambient_temp_c": 18.2,
+    "condition": "Cloudy",
+    "precipitation_prob_percent": 25,
+    "wind_speed_kmh": 14.5,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:45:00Z"
+  },
+  {
+    "station_id": "WX-SEA-02",
+    "location": "Snoqualmie Pass, WA",
+    "ambient_temp_c": -4.1,
+    "condition": "Heavy Snow & Ice",
+    "precipitation_prob_percent": 95,
+    "wind_speed_kmh": 58.0,
+    "road_condition": "ICY_BLOCKED",
+    "updated_at": "2026-09-13T21:50:00Z"
+  },
+  {
+    "station_id": "WX-ATL-03",
+    "location": "Atlanta, GA",
+    "ambient_temp_c": 28.5,
+    "condition": "Partly Cloudy",
+    "precipitation_prob_percent": 10,
+    "wind_speed_kmh": 8.2,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:40:00Z"
+  },
+  {
+    "station_id": "WX-DEN-04",
+    "location": "Denver, CO",
+    "ambient_temp_c": 12.0,
+    "condition": "Clear",
+    "precipitation_prob_percent": 0,
+    "wind_speed_kmh": 12.0,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:30:00Z"
+  }
+]

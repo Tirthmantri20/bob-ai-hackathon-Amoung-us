@@ -1,0 +1,38 @@
+[
+  {
+    "category": "Pharmaceuticals",
+    "grade": "Cold Chain Grade A",
+    "min_temp_c": 2.0,
+    "max_temp_c": 8.0,
+    "max_excursion_duration_minutes": 30,
+    "max_allowable_excursion_temp_c": 12.0,
+    "humidity_max_percent": 60,
+    "inspection_frequency_hours": 2,
+    "requires_continuous_logger": true,
+    "compliance_standard": "WHO TRS 961 Annex 9"
+  },
+  {
+    "category": "Biologics & Vaccines",
+    "grade": "Ultra Cold Chain",
+    "min_temp_c": -80.0,
+    "max_temp_c": -60.0,
+    "max_excursion_duration_minutes": 15,
+    "max_allowable_excursion_temp_c": -50.0,
+    "humidity_max_percent": 30,
+    "inspection_frequency_hours": 1,
+    "requires_continuous_logger": true,
+    "compliance_standard": "CDC Vaccine Storage and Handling Toolkit"
+  },
+  {
+    "category": "Fresh Seafood",
+    "grade": "Perishable Frozen",
+    "min_temp_c": -22.0,
+    "max_temp_c": -18.0,
+    "max_excursion_duration_minutes": 45,
+    "max_allowable_excursion_temp_c": -15.0,
+    "humidity_max_percent": 85,
+    "inspection_frequency_hours": 4,
+    "requires_continuous_logger": true,
+    "compliance_standard": "FDA HACCP Seafood Guidelines"
+  }
+]

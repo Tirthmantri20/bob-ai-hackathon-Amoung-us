@@ -1,0 +1,47 @@
+[
+  {
+    "id": "DIS-501",
+    "type": "SEVERE_WEATHER",
+    "severity": "HIGH",
+    "title": "Winter Storm Warning - Snoqualmie Pass Closure",
+    "affected_corridor": "I-90 Eastbound",
+    "start_time": "2026-09-12T14:00:00Z",
+    "expected_end_time": "2026-09-14T06:00:00Z",
+    "impact_delay_hours": 16.5,
+    "recommended_reroute": "I-84 East via Portland / Columbia River Gorge",
+    "coordinates": {
+      "lat": 47.4243,
+      "lon": -121.4138
+    }
+  },
+  {
+    "id": "DIS-502",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "MEDIUM",
+    "title": "Major Interstate Resurfacing along I-65 South",
+    "affected_corridor": "I-65 Southbound (Mile 110-128)",
+    "start_time": "2026-09-13T06:00:00Z",
+    "expected_end_time": "2026-09-13T20:00:00Z",
+    "impact_delay_hours": 2.5,
+    "recommended_reroute": "US-31 South bypass",
+    "coordinates": {
+      "lat": 39.5521,
+      "lon": -86.0543
+    }
+  },
+  {
+    "id": "DIS-503",
+    "type": "PORT_CONTAINER_HOLD",
+    "severity": "CRITICAL",
+    "title": "Customs Inspection Equipment Power Outage",
+    "affected_corridor": "Port of Newark Gate 4",
+    "start_time": "2026-09-13T10:00:00Z",
+    "expected_end_time": "2026-09-13T16:00:00Z",
+    "impact_delay_hours": 4.0,
+    "recommended_reroute": "Gate 12 Expedited Cold Line",
+    "coordinates": {
+      "lat": 40.6895,
+      "lon": -74.1745
+    }
+  }
+]

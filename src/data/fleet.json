@@ -1,0 +1,41 @@
+[
+  {
+    "id": "FLT-302",
+    "vehicle_type": "Reefer Truck (53ft)",
+    "license_plate": "IL-89241-TR",
+    "status": "ACTIVE",
+    "fuel_type": "Electric/Diesel Hybrid",
+    "cooling_system_type": "Carrier Transicold Vector 8500",
+    "capacity_kg": 20000,
+    "battery_charge_percent": 84,
+    "fuel_level_percent": 76,
+    "driver_name": "Marcus Vance",
+    "telemetry_stream_id": "TEL-FLT-302"
+  },
+  {
+    "id": "FLT-109",
+    "vehicle_type": "Refrigerated Trailer",
+    "license_plate": "WA-44120-HD",
+    "status": "ACTIVE",
+    "fuel_type": "Diesel",
+    "cooling_system_type": "Thermo King Precedent S-600",
+    "capacity_kg": 22000,
+    "battery_charge_percent": 100,
+    "fuel_level_percent": 42,
+    "driver_name": "Elena Rostova",
+    "telemetry_stream_id": "TEL-FLT-109"
+  },
+  {
+    "id": "FLT-514",
+    "vehicle_type": "Specialized Cryo-Reefer Van",
+    "license_plate": "NJ-91023-EV",
+    "status": "ACTIVE",
+    "fuel_type": "Battery Electric",
+    "cooling_system_type": "CryoTech Liquid Nitrogen Sub-zero System",
+    "capacity_kg": 7500,
+    "battery_charge_percent": 91,
+    "fuel_level_percent": 100,
+    "driver_name": "David Kim",
+    "telemetry_stream_id": "TEL-FLT-514"
+  }
+]

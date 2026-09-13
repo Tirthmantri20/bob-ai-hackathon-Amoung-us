@@ -1,0 +1,32 @@
+[
+  {
+    "carrier_id": "CRR-401",
+    "name": "FrostLine Logistics",
+    "contact_email": "ops@frostline.com",
+    "phone": "+1-800-555-0199",
+    "compliance_rating": 0.98,
+    "on_time_delivery_rate": 0.96,
+    "active_fleet_size": 150,
+    "certifications": ["GDP (Good Distribution Practice)", "ISO 9001", "SmartWay Partner"]
+  },
+  {
+    "carrier_id": "CRR-402",
+    "name": "Apex Cargo Transporters",
+    "contact_email": "dispatch@apexcargo.com",
+    "phone": "+1-800-555-0144",
+    "compliance_rating": 0.91,
+    "on_time_delivery_rate": 0.89,
+    "active_fleet_size": 220,
+    "certifications": ["DOT Certified", "SmartWay Partner"]
+  },
+  {
+    "carrier_id": "CRR-403",
+    "name": "Cascade Frozen Freight",
+    "contact_email": "support@cascadefrozen.com",
+    "phone": "+1-800-555-0172",
+    "compliance_rating": 0.84,
+    "on_time_delivery_rate": 0.82,
+    "active_fleet_size": 75,
+    "certifications": ["HACCP Compliant"]
+  }
+]
