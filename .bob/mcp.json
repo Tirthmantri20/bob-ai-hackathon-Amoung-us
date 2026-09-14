@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "supplyguard": {
+      "command": "python",
+      "args": ["-m", "src.mcp.server"],
+      "cwd": ".",
+      "env": {
+        "SUPPLYGUARD_API_URL": "http://localhost:8000"
+      },
+      "alwaysAllow": [],
+      "disabled": false
+    }
+  }
+}

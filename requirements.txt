@@ -24,3 +24,10 @@ pandas>=2.0.0
 
 # --- IBM watsonx.ai SDK (Step 4 AI explanation layer) ---
 ibm-watsonx-ai>=1.0.3,<2
+
+# --- MCP server (Step 5 IBM Bob integration layer) ---
+# v1 maintenance line; upper bound guards against breaking v2 API changes
+mcp>=1.28,<2
+
+# --- HTTP client (MCP tools call FastAPI REST endpoints) ---
+httpx>=0.25.0
