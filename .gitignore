@@ -95,3 +95,4 @@ logs/
 .terraform/
 *.tfstate
 *.tfstate.backup
+supply_chain.db

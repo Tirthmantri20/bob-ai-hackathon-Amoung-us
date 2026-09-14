@@ -1,0 +1,23 @@
+# SupplyGuard AI — Backend Dependencies
+# Step 1: Backend Data & Schema Foundation
+#
+# Install:  pip install -r requirements.txt
+# Requires: Python 3.11+
+
+# --- Web framework & server ---
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+
+# --- Data validation (Pydantic v2 required by architecture) ---
+pydantic>=2.0.0,<3
+
+# --- ORM & database ---
+sqlalchemy>=2.0.0
+
+# --- Environment variable loading ---
+python-dotenv>=1.0.0
+
+# --- Numerical computing (required by risk/optimization engines; included here
+#     so the virtualenv is complete for all backend modules) ---
+numpy>=1.25.0
+pandas>=2.0.0
