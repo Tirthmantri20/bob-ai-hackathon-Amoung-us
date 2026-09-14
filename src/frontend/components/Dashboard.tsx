@@ -27,6 +27,8 @@ import type {
 
 import AIBriefPanel from './AIBriefPanel'
 import DisruptionImpactPanel from './DisruptionImpactPanel'
+import AddShipmentModal from './AddShipmentModal'
+import AddDisruptionModal from './AddDisruptionModal'
 import DisruptionMonitor from './DisruptionMonitor'
 import ErrorBanner from './ErrorBanner'
 import Header from './Header'
@@ -59,6 +61,10 @@ export default function Dashboard() {
   const [mountLoading, setMountLoading] = useState(true)
   const [mountError, setMountError] = useState<string | null>(null)
   const [backendHealthy, setBackendHealthy] = useState(true)
+
+  // ── Modal state ───────────────────────────────────────────────────────────
+  const [showAddShipment, setShowAddShipment] = useState(false)
+  const [showAddDisruption, setShowAddDisruption] = useState(false)
 
   // ── Selection state ───────────────────────────────────────────────────────
   const [selectedShipmentId, setSelectedShipmentId] = useState<string | null>(INITIAL_SHIPMENT_ID)
@@ -280,13 +286,22 @@ export default function Dashboard() {
             </div>
 
             {/* ── Upper grid: roster + disruptions + map ── */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-start">
               {/* Left col: shipment roster & disruptions */}
               <div className="lg:col-span-1 space-y-4">
                 <section className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-                  <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-500">
-                    Active Shipments ({shipments.length})
-                  </h2>
+                  <div className="mb-3 flex items-center justify-between">
+                    <h2 className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                      Active Shipments ({shipments.length})
+                    </h2>
+                    <button
+                      type="button"
+                      onClick={() => setShowAddShipment(true)}
+                      className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-md bg-blue-600 text-white hover:bg-blue-700 shadow-xs transition"
+                    >
+                      + New Shipment
+                    </button>
+                  </div>
                   <ShipmentRoster
                     shipments={shipments}
                     activeRisks={activeRisks}
@@ -296,9 +311,18 @@ export default function Dashboard() {
                 </section>
 
                 <section className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-                  <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-500">
-                    Disruption Monitor ({disruptions.length})
-                  </h2>
+                  <div className="mb-3 flex items-center justify-between">
+                    <h2 className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                      Disruption Monitor ({disruptions.length})
+                    </h2>
+                    <button
+                      type="button"
+                      onClick={() => setShowAddDisruption(true)}
+                      className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-md bg-amber-600 text-white hover:bg-amber-700 shadow-xs transition"
+                    >
+                      + Report Disruption
+                    </button>
+                  </div>
                   <DisruptionMonitor
                     disruptions={disruptions}
                     selectedId={selectedDisruptionId}
@@ -307,15 +331,15 @@ export default function Dashboard() {
                 </section>
               </div>
 
-              {/* Right col: map */}
-              <div className="lg:col-span-2 rounded-xl border border-slate-200 bg-white p-2 shadow-sm overflow-hidden flex flex-col" style={{ minHeight: '400px' }}>
+              {/* Right col: map (fixed height, non-stretching, sticky) */}
+              <div className="lg:col-span-2 rounded-xl border border-slate-200 bg-white p-2 shadow-sm overflow-hidden flex flex-col lg:sticky lg:top-4 h-[720px]">
                 <div className="px-2 py-1.5 border-b border-slate-100 flex items-center justify-between">
                   <h2 className="text-xs font-bold uppercase tracking-wider text-slate-500">
                     Geospatial Fleet &amp; Disruption Map
                   </h2>
                   <span className="text-[11px] text-slate-400">Click pins for live telematics</span>
                 </div>
-                <div className="flex-1 w-full rounded-lg overflow-hidden relative min-h-[350px]">
+                <div className="flex-1 w-full rounded-lg overflow-hidden relative min-h-[500px]">
                   <ControlTowerMap
                     shipments={shipments}
                     activeRisks={activeRisks}
@@ -386,6 +410,38 @@ export default function Dashboard() {
                 />
               </section>
             </div>
+
+            {showAddShipment && (
+              <AddShipmentModal
+                onClose={() => setShowAddShipment(false)}
+                onCreated={async () => {
+                  setShowAddShipment(false)
+                  try {
+                    const ships = await api.getShipments()
+                    setShipments(ships)
+                    const risks = await api.getActiveRisk()
+                    setActiveRisks(new Map(risks.map((r) => [r.shipment_id, r])))
+                  } catch (e) {
+                    console.error('Refresh after shipment create failed:', e)
+                  }
+                }}
+              />
+            )}
+
+            {showAddDisruption && (
+              <AddDisruptionModal
+                onClose={() => setShowAddDisruption(false)}
+                onCreated={async () => {
+                  setShowAddDisruption(false)
+                  try {
+                    const disrs = await api.getDisruptions()
+                    setDisruptions(disrs)
+                  } catch (e) {
+                    console.error('Refresh after disruption create failed:', e)
+                  }
+                }}
+              />
+            )}
           </>
         )}
       </main>

@@ -13,7 +13,7 @@
     "vibration_g": 0.14,
     "gps": {
       "lat": 32.7767,
-      "lon": -96.7970,
+      "lon": -96.797,
       "speed_kmh": 82.0,
       "heading_deg": 180
     }
@@ -145,8 +145,8 @@
     "door_sensor": "CLOSED",
     "vibration_g": 0.16,
     "gps": {
-      "lat": 33.7490,
-      "lon": -84.3880,
+      "lat": 33.749,
+      "lon": -84.388,
       "speed_kmh": 61.5,
       "heading_deg": 90
     }
@@ -184,7 +184,7 @@
     "vibration_g": 0.27,
     "gps": {
       "lat": 40.7128,
-      "lon": -74.0060,
+      "lon": -74.006,
       "speed_kmh": 52.0,
       "heading_deg": 45
     }
@@ -279,7 +279,7 @@
     "vibration_g": 0.36,
     "gps": {
       "lat": 44.9778,
-      "lon": -93.2650,
+      "lon": -93.265,
       "speed_kmh": 38.0,
       "heading_deg": 80
     }
@@ -317,7 +317,7 @@
     "vibration_g": 0.22,
     "gps": {
       "lat": 40.7608,
-      "lon": -111.8910,
+      "lon": -111.891,
       "speed_kmh": 77.5,
       "heading_deg": 270
     }
@@ -354,7 +354,7 @@
     "door_sensor": "CLOSED",
     "vibration_g": 0.17,
     "gps": {
-      "lat": 41.1400,
+      "lat": 41.14,
       "lon": -104.8202,
       "speed_kmh": 88.0,
       "heading_deg": 190
@@ -428,7 +428,7 @@
     "cargo_humidity_percent": 64.7,
     "reefer_compressor_status": "NORMAL_CYCLING",
     "door_sensor": "CLOSED",
-    "vibration_g": 0.20,
+    "vibration_g": 0.2,
     "gps": {
       "lat": 43.0389,
       "lon": -87.9065,
@@ -468,7 +468,7 @@
     "door_sensor": "CLOSED",
     "vibration_g": 0.06,
     "gps": {
-      "lat": 41.8240,
+      "lat": 41.824,
       "lon": -71.4128,
       "speed_kmh": 65.5,
       "heading_deg": 35
@@ -640,7 +640,7 @@
     "vibration_g": 0.32,
     "gps": {
       "lat": 32.7767,
-      "lon": -96.7970,
+      "lon": -96.797,
       "speed_kmh": 48.0,
       "heading_deg": 75
     }
@@ -716,7 +716,7 @@
     "vibration_g": 0.39,
     "gps": {
       "lat": 40.7128,
-      "lon": -74.0060,
+      "lon": -74.006,
       "speed_kmh": 34.0,
       "heading_deg": 95
     }
@@ -754,7 +754,7 @@
     "vibration_g": 0.21,
     "gps": {
       "lat": 33.4484,
-      "lon": -112.0740,
+      "lon": -112.074,
       "speed_kmh": 79.0,
       "heading_deg": 110
     }
@@ -770,7 +770,7 @@
     "cargo_humidity_percent": 48.8,
     "reefer_compressor_status": "NORMAL_CYCLING",
     "door_sensor": "CLOSED",
-    "vibration_g": 0.10,
+    "vibration_g": 0.1,
     "gps": {
       "lat": 39.7817,
       "lon": -86.1477,
@@ -811,7 +811,7 @@
     "vibration_g": 0.16,
     "gps": {
       "lat": 35.1495,
-      "lon": -90.0490,
+      "lon": -90.049,
       "speed_kmh": 82.0,
       "heading_deg": 245
     }
@@ -890,6 +890,44 @@
       "lon": -75.1652,
       "speed_kmh": 76.5,
       "heading_deg": 125
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-109",
+    "vehicle_id": "FLT-109",
+    "shipment_id": "SHP-1002",
+    "timestamp": "2026-09-13T22:00:00Z",
+    "cargo_temp_c": -17.2,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": 2.8,
+    "cargo_humidity_percent": 65.0,
+    "reefer_compressor_status": "WARNING_HIGH_LOAD",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.38,
+    "gps": {
+      "lat": 45.5152,
+      "lon": -122.6784,
+      "speed_kmh": 32.0,
+      "heading_deg": 95
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-514",
+    "vehicle_id": "FLT-514",
+    "shipment_id": "SHP-1003",
+    "timestamp": "2026-09-13T22:00:00Z",
+    "cargo_temp_c": -71.4,
+    "cargo_temp_target_c": -70.0,
+    "temp_deviation_c": -1.4,
+    "cargo_humidity_percent": 15.2,
+    "reefer_compressor_status": "STABLE_CRYOGENIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.08,
+    "gps": {
+      "lat": 39.9526,
+      "lon": -75.1652,
+      "speed_kmh": 94.0,
+      "heading_deg": 220
     }
   }
 ]

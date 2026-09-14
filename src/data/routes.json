@@ -24,20 +24,20 @@
       },
       {
         "name": "Providence, RI",
-        "lat": 41.8240,
+        "lat": 41.824,
         "lon": -71.4128
       }
     ],
     "cold_storage_depots": [
       {
         "name": "Northeast Cold Hub - New Haven",
-        "lat": 41.3200,
-        "lon": -72.9200
+        "lat": 41.32,
+        "lon": -72.92
       },
       {
         "name": "Atlantic Frozen Depot - Providence",
-        "lat": 41.8100,
-        "lon": -71.4000
+        "lat": 41.81,
+        "lon": -71.4
       }
     ]
   },
@@ -71,13 +71,13 @@
     "cold_storage_depots": [
       {
         "name": "Inland Empire Cold Storage",
-        "lat": 34.1000,
-        "lon": -117.2700
+        "lat": 34.1,
+        "lon": -117.27
       },
       {
         "name": "Desert Fresh Logistics - Yuma",
-        "lat": 32.7000,
-        "lon": -114.6100
+        "lat": 32.7,
+        "lon": -114.61
       }
     ]
   },
@@ -111,13 +111,13 @@
     "cold_storage_depots": [
       {
         "name": "North Texas Cold Vault",
-        "lat": 32.0800,
-        "lon": -96.4500
+        "lat": 32.08,
+        "lon": -96.45
       },
       {
         "name": "Gulf Coast Refrigerated Hub",
-        "lat": 30.1600,
-        "lon": -95.4500
+        "lat": 30.16,
+        "lon": -95.45
       }
     ]
   },
@@ -152,13 +152,13 @@
     "cold_storage_depots": [
       {
         "name": "Northern California Cold Hub",
-        "lat": 40.5800,
-        "lon": -122.3800
+        "lat": 40.58,
+        "lon": -122.38
       },
       {
         "name": "Cascade Refrigerated Depot - Portland",
-        "lat": 45.5100,
-        "lon": -122.6600
+        "lat": 45.51,
+        "lon": -122.66
       }
     ]
   },
@@ -199,13 +199,13 @@
     "cold_storage_depots": [
       {
         "name": "Florida Cold Distribution Hub",
-        "lat": 30.3200,
-        "lon": -81.6400
+        "lat": 30.32,
+        "lon": -81.64
       },
       {
         "name": "Georgia Fresh Logistics - Macon",
-        "lat": 32.8300,
-        "lon": -83.6200
+        "lat": 32.83,
+        "lon": -83.62
       }
     ]
   },
@@ -223,12 +223,12 @@
       {
         "name": "Greenville, SC",
         "lat": 34.8526,
-        "lon": -82.3940
+        "lon": -82.394
       },
       {
         "name": "Spartanburg, SC",
         "lat": 34.9496,
-        "lon": -81.9320
+        "lon": -81.932
       },
       {
         "name": "Gastonia, NC",
@@ -239,13 +239,13 @@
     "cold_storage_depots": [
       {
         "name": "Upstate Cold Chain Hub",
-        "lat": 34.8600,
-        "lon": -82.3800
+        "lat": 34.86,
+        "lon": -82.38
       },
       {
         "name": "Carolinas Frozen Logistics",
-        "lat": 35.2500,
-        "lon": -81.1800
+        "lat": 35.25,
+        "lon": -81.18
       }
     ]
   },
@@ -268,8 +268,8 @@
       },
       {
         "name": "Green River, UT",
-        "lat": 38.9950,
-        "lon": -110.1590
+        "lat": 38.995,
+        "lon": -110.159
       },
       {
         "name": "Provo, UT",
@@ -280,13 +280,13 @@
     "cold_storage_depots": [
       {
         "name": "Western Colorado Cold Depot",
-        "lat": 39.0500,
-        "lon": -108.5400
+        "lat": 39.05,
+        "lon": -108.54
       },
       {
         "name": "Utah Mountain Cold Hub",
-        "lat": 40.2200,
-        "lon": -111.6500
+        "lat": 40.22,
+        "lon": -111.65
       }
     ]
   },
@@ -310,7 +310,7 @@
       {
         "name": "South Bend, IN",
         "lat": 41.6764,
-        "lon": -86.2520
+        "lon": -86.252
       },
       {
         "name": "Kalamazoo, MI",
@@ -321,13 +321,13 @@
     "cold_storage_depots": [
       {
         "name": "Lake Michigan Cold Hub - Gary",
-        "lat": 41.5900,
-        "lon": -87.3300
+        "lat": 41.59,
+        "lon": -87.33
       },
       {
         "name": "Michigan Refrigerated Depot",
-        "lat": 42.2800,
-        "lon": -85.5700
+        "lat": 42.28,
+        "lon": -85.57
       }
     ]
   },
@@ -351,7 +351,7 @@
       {
         "name": "Kingman, AZ",
         "lat": 35.1894,
-        "lon": -114.0530
+        "lon": -114.053
       },
       {
         "name": "Boulder City, NV",
@@ -362,13 +362,13 @@
     "cold_storage_depots": [
       {
         "name": "Arizona Desert Cold Hub",
-        "lat": 33.9600,
-        "lon": -112.7100
+        "lat": 33.96,
+        "lon": -112.71
       },
       {
         "name": "Nevada Frozen Distribution Center",
-        "lat": 35.9700,
-        "lon": -114.8200
+        "lat": 35.97,
+        "lon": -114.82
       }
     ]
   },
@@ -402,13 +402,109 @@
     "cold_storage_depots": [
       {
         "name": "Puget Sound Cold Storage",
-        "lat": 47.2400,
-        "lon": -122.4300
+        "lat": 47.24,
+        "lon": -122.43
       },
       {
         "name": "Columbia River Cold Hub",
-        "lat": 46.1300,
-        "lon": -122.9200
+        "lat": 46.13,
+        "lon": -122.92
+      }
+    ]
+  },
+  {
+    "route_id": "RT-CHI-ATL-01",
+    "name": "Chicago to Atlanta Primary Interstate Corridor",
+    "origin": "Chicago, IL",
+    "destination": "Atlanta, GA",
+    "distance_km": 1150.0,
+    "typical_duration_hours": 11.5,
+    "highways": [
+      "I-65 S",
+      "I-24 E",
+      "I-75 S"
+    ],
+    "waypoints": [
+      {
+        "name": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lon": -86.1581
+      },
+      {
+        "name": "Louisville, KY",
+        "lat": 38.2527,
+        "lon": -85.7585
+      },
+      {
+        "name": "Nashville, TN",
+        "lat": 36.1627,
+        "lon": -86.7816
+      },
+      {
+        "name": "Chattanooga, TN",
+        "lat": 35.0456,
+        "lon": -85.3097
+      }
+    ],
+    "cold_storage_depots": [
+      {
+        "name": "Midwest Cold Vault - Indianapolis",
+        "lat": 39.7501,
+        "lon": -86.1302
+      },
+      {
+        "name": "Dixie Freezer Hub - Nashville",
+        "lat": 36.1402,
+        "lon": -86.7501
+      }
+    ]
+  },
+  {
+    "route_id": "RT-SEA-DEN-01",
+    "name": "Seattle to Denver Trans-Mountain Corridor",
+    "origin": "Seattle, WA",
+    "destination": "Denver, CO",
+    "distance_km": 2100.0,
+    "typical_duration_hours": 20.0,
+    "highways": [
+      "I-90 E",
+      "I-82 E",
+      "I-84 E",
+      "I-80 E",
+      "I-25 S"
+    ],
+    "waypoints": [
+      {
+        "name": "Ellensburg, WA",
+        "lat": 46.9965,
+        "lon": -120.5478
+      },
+      {
+        "name": "Boise, ID",
+        "lat": 43.615,
+        "lon": -116.2023
+      },
+      {
+        "name": "Salt Lake City, UT",
+        "lat": 40.7608,
+        "lon": -111.891
+      },
+      {
+        "name": "Cheyenne, WY",
+        "lat": 41.14,
+        "lon": -104.8202
+      }
+    ],
+    "cold_storage_depots": [
+      {
+        "name": "Intermountain Frozen Logistics - Boise",
+        "lat": 43.601,
+        "lon": -116.21
+      },
+      {
+        "name": "Rocky Mountain Cold Chain - Salt Lake City",
+        "lat": 40.75,
+        "lon": -111.87
       }
     ]
   }

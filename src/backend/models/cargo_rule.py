@@ -23,7 +23,7 @@ from src.backend.db.database import Base
 
 class CargoRule(Base):
     __tablename__ = "cargo_rules"
-    __table_args__ = (UniqueConstraint("category", name="uq_cargo_rules_category"),)
+    __table_args__ = (UniqueConstraint("grade", name="uq_cargo_rules_grade"),)
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     category: Mapped[str] = mapped_column(String, nullable=False)

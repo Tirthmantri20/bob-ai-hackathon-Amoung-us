@@ -1,3 +1,4 @@
+
 """
 Seed loader for SupplyGuard AI.
 
@@ -108,19 +109,25 @@ def _parse_dt(value: str | None) -> datetime | None:
 
 def _seed_cargo_rules(session: Session, records: List[Dict[str, Any]]) -> int:
     inserted = 0
+    seen_grades = set()
     for i, rec in enumerate(records):
         try:
             category = rec["category"]
+            grade = rec["grade"]
         except KeyError as exc:
             raise KeyError(
                 f"cargo_rules.json record[{i}] missing required key: {exc}"
             ) from exc
 
+        if grade in seen_grades:
+            continue
+        seen_grades.add(grade)
+
         existing = (
-            session.query(CargoRule).filter_by(category=category).first()
+            session.query(CargoRule).filter_by(grade=grade).first()
         )
         if existing:
-            logger.debug("CargoRule category=%r already exists — skipping.", category)
+            logger.debug("CargoRule grade=%r already exists — skipping.", grade)
             continue
 
         session.add(
