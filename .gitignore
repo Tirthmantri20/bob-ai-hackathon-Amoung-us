@@ -42,6 +42,7 @@ dist/
 .nuxt/
 .output/
 .cache/
+coverage/
 
 # ── Java / Maven / Gradle ────────────────────────────────────────────────────
 target/
@@ -96,3 +97,5 @@ logs/
 *.tfstate
 *.tfstate.backup
 supply_chain.db
+
+coverage/
