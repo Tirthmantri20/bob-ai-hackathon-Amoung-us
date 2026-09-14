@@ -27,6 +27,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from src.backend.api import disruptions as disruptions_router
+from src.backend.api import explain as explain_router
 from src.backend.api import fleet as fleet_router
 from src.backend.api import risk as risk_router
 from src.backend.api import routes as routes_router
@@ -66,6 +67,7 @@ async def lifespan(app: FastAPI):
     # and to ensure all model classes are registered before create_all().
     from src.backend.db.database import SessionLocal, init_db
     from src.backend.db.seed import seed_database
+    from src.backend.ai.watsonx_service import WatsonxService
 
     # 1. Create tables
     logger.info("Initialising database tables …")
@@ -80,10 +82,13 @@ async def lifespan(app: FastAPI):
     finally:
         db.close()
 
+    # 3. Initialise watsonx.ai service (credential detection logged inside)
+    app.state.watsonx_service = WatsonxService()
+
     logger.info("SupplyGuard AI — ready to accept requests.")
     yield
 
-    # Shutdown hook (nothing to clean up in Step 1)
+    # Shutdown hook
     logger.info("SupplyGuard AI — shutting down.")
 
 
@@ -138,6 +143,11 @@ app.include_router(
     risk_router.router,
     prefix="/api/risk",
     tags=["risk"],
+)
+app.include_router(
+    explain_router.router,
+    prefix="/api/explain",
+    tags=["ai-explain"],
 )
 
 

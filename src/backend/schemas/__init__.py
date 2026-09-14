@@ -57,6 +57,10 @@ from src.backend.schemas.engine_responses import (  # noqa: F401
     RouteScoreResponse,
     ShipmentRiskResponse,
 )
+from src.backend.schemas.ai_response import (  # noqa: F401
+    AIExplainRequest,
+    AIExplanationResponse,
+)
 
 __all__ = [
     # CargoRule
@@ -84,4 +88,7 @@ __all__ = [
     "FleetMatchResponse",
     "AffectedShipmentEntry",
     "DisruptionImpactResponse",
+    # AI explanation schemas (Step 4)
+    "AIExplainRequest",
+    "AIExplanationResponse",
 ]
