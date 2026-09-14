@@ -37,7 +37,7 @@ export default function ShipmentDetailPanel({
 }: ShipmentDetailPanelProps) {
   if (!shipment) {
     return (
-      <p className="text-sm text-gray-500 py-6 text-center">
+      <p className="text-sm text-slate-500 py-6 text-center">
         Select a shipment from the roster to view details.
       </p>
     )
@@ -56,42 +56,53 @@ export default function ShipmentDetailPanel({
     : '—'
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5">
       {/* Shipment metadata */}
-      <div>
+      <div className="border-b border-slate-200 pb-4">
         <div className="flex items-center justify-between flex-wrap gap-2">
           <div>
-            <h2 className="text-lg font-bold text-white font-mono">{shipment.id}</h2>
-            <p className="text-sm text-gray-400">{shipment.cargo_type} — {shipment.cargo_category}</p>
+            <h2 className="text-xl font-extrabold text-slate-900 font-mono tracking-tight">{shipment.id}</h2>
+            <p className="text-sm text-slate-600 font-medium">{shipment.cargo_type} &bull; {shipment.cargo_category}</p>
           </div>
           {risk && <SeverityBadge severity={risk.severity} size="md" />}
         </div>
-        <div className="mt-2 grid grid-cols-2 gap-2 text-xs text-gray-400">
-          <span>From: <strong className="text-gray-200">{shipment.origin}</strong></span>
-          <span>To: <strong className="text-gray-200">{shipment.destination}</strong></span>
-          <span>ETA: <strong className="text-gray-200">{arrivalDate}</strong></span>
-          <span>Carrier: <strong className="text-gray-200">{carrierName}</strong></span>
+        <div className="mt-3 grid grid-cols-2 gap-2.5 text-xs">
+          <div className="rounded-lg bg-slate-50 border border-slate-200 px-3 py-2">
+            <span className="text-slate-500 block">From</span>
+            <strong className="text-slate-900 text-sm font-semibold">{shipment.origin}</strong>
+          </div>
+          <div className="rounded-lg bg-slate-50 border border-slate-200 px-3 py-2">
+            <span className="text-slate-500 block">To</span>
+            <strong className="text-slate-900 text-sm font-semibold">{shipment.destination}</strong>
+          </div>
+          <div className="rounded-lg bg-slate-50 border border-slate-200 px-3 py-2">
+            <span className="text-slate-500 block">Carrier</span>
+            <strong className="text-slate-900 font-semibold">{carrierName}</strong>
+          </div>
+          <div className="rounded-lg bg-slate-50 border border-slate-200 px-3 py-2">
+            <span className="text-slate-500 block">Estimated Arrival</span>
+            <strong className="text-slate-900 font-semibold">{arrivalDate}</strong>
+          </div>
         </div>
         {shipment.current_location_name && (
-          <p className="mt-1 text-xs text-gray-500">
-            📍 Currently at {shipment.current_location_name}
+          <p className="mt-2 text-xs text-slate-500">
+            📍 Currently at <strong className="text-slate-700">{shipment.current_location_name}</strong>
           </p>
         )}
       </div>
 
       {/* Risk score + sub-scores */}
       {risk ? (
-        <div className="rounded-lg bg-gray-800 border border-gray-700 p-4 space-y-4">
+        <div className="rounded-xl bg-slate-50 border border-slate-200 p-4 space-y-4 shadow-sm">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-2">
+            <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
               Composite Risk Score (0–100)
             </p>
-            {/* RiskScoreGauge receives total_score (0–100) from the engine */}
             <RiskScoreGauge score={risk.total_score} severity={risk.severity} />
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-2">
+            <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
               Risk Sub-scores
             </p>
             <div className="space-y-2">
@@ -104,15 +115,15 @@ export default function ShipmentDetailPanel({
           </div>
 
           {risk.contributing_disruption_ids.length > 0 && (
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-1">
+            <div className="border-t border-slate-200 pt-3">
+              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">
                 Contributing Disruptions
               </p>
-              <div className="flex flex-wrap gap-1">
+              <div className="flex flex-wrap gap-1.5">
                 {risk.contributing_disruption_ids.map((d) => (
                   <span
                     key={d}
-                    className="rounded bg-red-900/50 border border-red-700 px-2 py-0.5 text-xs font-mono text-red-300"
+                    className="rounded-md bg-red-50 border border-red-200 px-2 py-0.5 text-xs font-mono font-bold text-red-700"
                   >
                     {d}
                   </span>
@@ -122,28 +133,28 @@ export default function ShipmentDetailPanel({
           )}
         </div>
       ) : (
-        <p className="text-sm text-gray-500">Risk data unavailable.</p>
+        <p className="text-sm text-slate-500">Risk data unavailable.</p>
       )}
 
       {/* Cold-chain */}
-      <div className="rounded-lg bg-gray-800 border border-gray-700 p-4">
-        <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">
+      <div className="rounded-xl bg-slate-50 border border-slate-200 p-4 shadow-sm">
+        <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
           Cold Chain Status
         </p>
         <ColdChainPanel data={coldChain} loading={false} />
       </div>
 
       {/* Route recommendations */}
-      <div className="rounded-lg bg-gray-800 border border-gray-700 p-4">
-        <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">
+      <div className="rounded-xl bg-slate-50 border border-slate-200 p-4 shadow-sm">
+        <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
           Route Optimization
         </p>
         <RoutePanel data={routes} loading={false} />
       </div>
 
       {/* Fleet match */}
-      <div className="rounded-lg bg-gray-800 border border-gray-700 p-4">
-        <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">
+      <div className="rounded-xl bg-slate-50 border border-slate-200 p-4 shadow-sm">
+        <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
           Fleet Rescue Candidates
         </p>
         <FleetMatchPanel data={fleetMatch} loading={false} />
@@ -152,9 +163,10 @@ export default function ShipmentDetailPanel({
       {/* AI brief trigger */}
       <button
         onClick={onRequestAIBrief}
-        className="w-full rounded-lg bg-blue-700 px-4 py-3 text-sm font-semibold text-white
-                   hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400
-                   transition-colors"
+        className="w-full rounded-xl bg-blue-600 px-4 py-3 text-sm font-bold text-white
+                   hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400
+                   shadow-sm transition-all"
+        aria-label={`Get AI Brief for ${shipment.id}`}
       >
         🤖 Get AI Brief for {shipment.id}
       </button>

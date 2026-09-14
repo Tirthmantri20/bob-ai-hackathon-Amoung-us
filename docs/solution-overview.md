@@ -68,7 +68,7 @@ Rather than allowing an LLM to hallucinate operational metrics, SupplyGuard AI a
 
 1. **Deterministic Backend Engine:** All risk scores, geospatial intersections, route costs, and fleet matches are computed deterministically in Python/FastAPI.
 2. **watsonx.ai Reasoning & Synthesis:** watsonx.ai ingests the structured analysis output to synthesize operator-ready briefs, explain why a specific detour was chosen, and highlight critical trade-offs.
-3. **Model Context Protocol (MCP) & IBM Bob:** An enterprise MCP server exposes operational tools directly to IBM Bob CLI and agentic workflows. Dispatchers can query IBM Bob in natural language (`"Which shipments are impacted by the Mumbai port strike and what idle reefer can rescue S204?"`), and Bob executes real tools to inspect and resolve the situation.
+3. **Model Context Protocol (MCP) & IBM Bob:** An enterprise MCP server exposes operational tools directly to IBM Bob CLI and agentic workflows. Dispatchers can query IBM Bob in natural language (e.g., `"What is the risk level for shipment SHP-1002 and which fleet asset can support it?"`), and Bob executes real tools (`evaluate_shipment_risk`, `match_fleet_asset`) to inspect and resolve the situation.
 
 ---
 
@@ -79,7 +79,7 @@ Rather than allowing an LLM to hallucinate operational metrics, SupplyGuard AI a
 | **Deterministic Risk Engine + LLM Explainer** | Pure end-to-end LLM decision making | Logistics decisions require auditable, repeatable, and mathematically sound calculations. LLMs explain and summarize; deterministic algorithms compute. |
 | **Three-Layer Evidence Model** | Telemetry-only alerting | Telemetry-only systems are reactive. Environmental predictive layers enable intervention before thermal failure. |
 | **FastAPI + Next.js + MCP Architecture** | Monolithic framework | Decouples computational microservices, geospatial map rendering, and AI agent integration into scalable, modular services. |
-| **PostgreSQL / PostGIS Geospatial Layer** | In-memory geospatial checks | PostGIS enables spatial corridor indexing, radius queries, and realistic route intersection calculations at scale. |
+| **PostgreSQL / PostGIS Geospatial Layer** *(roadmap — prototype uses SQLite)* | In-memory geospatial checks | PostGIS enables spatial corridor indexing, radius queries, and realistic route intersection calculations at scale. Prototype uses SQLite with Haversine-based radius checks. |
 | **Pre-configured Seed Scenarios** | Uncontrolled live web scraping | Ensures 100% reproducible, reliable, and testable hackathon demonstration runs without third-party API rate-limit failures. |
 
 ---

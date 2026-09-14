@@ -38,9 +38,9 @@ export default function RiskScoreGauge({ score, severity }: RiskScoreGaugeProps)
         <span className={`text-4xl font-extrabold tabular-nums ${textClass}`}>
           {score.toFixed(1)}
         </span>
-        <span className="text-xs text-gray-400 pb-1">/ 100</span>
+        <span className="text-xs text-slate-500 pb-1 font-medium">/ 100</span>
       </div>
-      <div className="h-3 w-full rounded-full bg-gray-700 overflow-hidden">
+      <div className="h-3 w-full rounded-full bg-slate-200 overflow-hidden">
         <div
           className={`h-full rounded-full transition-all duration-500 ${barClass}`}
           style={{ width: `${clampedWidth}%` }}

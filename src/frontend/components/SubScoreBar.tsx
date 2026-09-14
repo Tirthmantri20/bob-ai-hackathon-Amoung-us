@@ -14,10 +14,10 @@ export default function SubScoreBar({ label, value, fallback = false }: SubScore
 
   return (
     <div className="flex items-center gap-2">
-      <span className="w-28 shrink-0 text-xs text-gray-400">{label}</span>
-      <div className="flex-1 h-2 rounded-full bg-gray-700 overflow-hidden">
+      <span className="w-28 shrink-0 text-xs text-slate-600 font-medium">{label}</span>
+      <div className="flex-1 h-2 rounded-full bg-slate-200 overflow-hidden">
         <div
-          className="h-full rounded-full bg-blue-500 transition-all duration-300"
+          className="h-full rounded-full bg-blue-600 transition-all duration-300"
           style={{ width: `${pct}%` }}
           role="progressbar"
           aria-valuenow={value}
@@ -26,11 +26,11 @@ export default function SubScoreBar({ label, value, fallback = false }: SubScore
           aria-label={`${label}: ${(value * 100).toFixed(0)}%`}
         />
       </div>
-      <span className="w-10 text-right text-xs tabular-nums text-gray-300">
+      <span className="w-10 text-right text-xs tabular-nums text-slate-700 font-semibold">
         {(value * 100).toFixed(0)}%
       </span>
       {fallback && (
-        <span className="text-xs text-gray-500 italic" title="Estimated — no data available">
+        <span className="text-xs text-slate-400 italic" title="Estimated — no data available">
           ⓘ est.
         </span>
       )}

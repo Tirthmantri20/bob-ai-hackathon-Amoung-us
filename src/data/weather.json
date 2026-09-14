@@ -1,36 +1,186 @@
 [
   {
-    "station_id": "WX-CHI-01",
-    "location": "Chicago, IL",
-    "ambient_temp_c": 18.2,
-    "condition": "Cloudy",
-    "precipitation_prob_percent": 25,
-    "wind_speed_kmh": 14.5,
-    "road_condition": "DRY",
-    "updated_at": "2026-09-13T21:45:00Z"
-  },
-  {
-    "station_id": "WX-SEA-02",
-    "location": "Snoqualmie Pass, WA",
-    "ambient_temp_c": -4.1,
-    "condition": "Heavy Snow & Ice",
-    "precipitation_prob_percent": 95,
-    "wind_speed_kmh": 58.0,
-    "road_condition": "ICY_BLOCKED",
-    "updated_at": "2026-09-13T21:50:00Z"
-  },
-  {
-    "station_id": "WX-ATL-03",
-    "location": "Atlanta, GA",
-    "ambient_temp_c": 28.5,
+    "station_id": "WX-NYC-05",
+    "location": "New York, NY",
+    "ambient_temp_c": 21.4,
     "condition": "Partly Cloudy",
-    "precipitation_prob_percent": 10,
-    "wind_speed_kmh": 8.2,
+    "precipitation_prob_percent": 20,
+    "wind_speed_kmh": 13.2,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:35:00Z"
+  },
+  {
+    "station_id": "WX-BOS-06",
+    "location": "Boston, MA",
+    "ambient_temp_c": 17.8,
+    "condition": "Cloudy",
+    "precipitation_prob_percent": 35,
+    "wind_speed_kmh": 18.5,
     "road_condition": "DRY",
     "updated_at": "2026-09-13T21:40:00Z"
   },
   {
-    "station_id": "WX-DEN-04",
+    "station_id": "WX-IND-07",
+    "location": "Indianapolis, IN",
+    "ambient_temp_c": 19.6,
+    "condition": "Clear",
+    "precipitation_prob_percent": 5,
+    "wind_speed_kmh": 10.8,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:42:00Z"
+  },
+  {
+    "station_id": "WX-LOU-08",
+    "location": "Louisville, KY",
+    "ambient_temp_c": 22.1,
+    "condition": "Partly Cloudy",
+    "precipitation_prob_percent": 15,
+    "wind_speed_kmh": 9.6,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:38:00Z"
+  },
+  {
+    "station_id": "WX-NAS-09",
+    "location": "Nashville, TN",
+    "ambient_temp_c": 24.8,
+    "condition": "Clear",
+    "precipitation_prob_percent": 8,
+    "wind_speed_kmh": 11.4,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:44:00Z"
+  },
+  {
+    "station_id": "WX-CHA-10",
+    "location": "Chattanooga, TN",
+    "ambient_temp_c": 25.3,
+    "condition": "Partly Cloudy",
+    "precipitation_prob_percent": 20,
+    "wind_speed_kmh": 7.8,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:41:00Z"
+  },
+  {
+    "station_id": "WX-DAL-11",
+    "location": "Dallas, TX",
+    "ambient_temp_c": 31.2,
+    "condition": "Clear",
+    "precipitation_prob_percent": 5,
+    "wind_speed_kmh": 16.7,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:37:00Z"
+  },
+  {
+    "station_id": "WX-HOU-12",
+    "location": "Houston, TX",
+    "ambient_temp_c": 29.7,
+    "condition": "Humid & Cloudy",
+    "precipitation_prob_percent": 45,
+    "wind_speed_kmh": 17.3,
+    "road_condition": "WET",
+    "updated_at": "2026-09-13T21:43:00Z"
+  },
+  {
+    "station_id": "WX-PHX-13",
+    "location": "Phoenix, AZ",
+    "ambient_temp_c": 34.5,
+    "condition": "Clear",
+    "precipitation_prob_percent": 0,
+    "wind_speed_kmh": 12.4,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:39:00Z"
+  },
+  {
+    "station_id": "WX-LAS-14",
+    "location": "Las Vegas, NV",
+    "ambient_temp_c": 32.8,
+    "condition": "Clear",
+    "precipitation_prob_percent": 0,
+    "wind_speed_kmh": 14.9,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:36:00Z"
+  },
+  {
+    "station_id": "WX-LAX-15",
+    "location": "Los Angeles, CA",
+    "ambient_temp_c": 22.6,
+    "condition": "Clear",
+    "precipitation_prob_percent": 3,
+    "wind_speed_kmh": 10.2,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:32:00Z"
+  },
+  {
+    "station_id": "WX-SFO-16",
+    "location": "San Francisco, CA",
+    "ambient_temp_c": 16.4,
+    "condition": "Foggy",
+    "precipitation_prob_percent": 15,
+    "wind_speed_kmh": 20.1,
+    "road_condition": "DAMP",
+    "updated_at": "2026-09-13T21:34:00Z"
+  },
+  {
+    "station_id": "WX-SAC-17",
+    "location": "Sacramento, CA",
+    "ambient_temp_c": 25.7,
+    "condition": "Clear",
+    "precipitation_prob_percent": 2,
+    "wind_speed_kmh": 8.7,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:33:00Z"
+  },
+  {
+    "station_id": "WX-RDD-18",
+    "location": "Redding, CA",
+    "ambient_temp_c": 27.8,
+    "condition": "Clear",
+    "precipitation_prob_percent": 0,
+    "wind_speed_kmh": 11.3,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:31:00Z"
+  },
+  {
+    "station_id": "WX-PDX-19",
+    "location": "Portland, OR",
+    "ambient_temp_c": 14.2,
+    "condition": "Light Rain",
+    "precipitation_prob_percent": 65,
+    "wind_speed_kmh": 16.4,
+    "road_condition": "WET",
+    "updated_at": "2026-09-13T21:45:00Z"
+  },
+  {
+    "station_id": "WX-BOI-20",
+    "location": "Boise, ID",
+    "ambient_temp_c": 11.7,
+    "condition": "Cloudy",
+    "precipitation_prob_percent": 30,
+    "wind_speed_kmh": 13.8,
+    "road_condition": "DAMP",
+    "updated_at": "2026-09-13T21:46:00Z"
+  },
+  {
+    "station_id": "WX-SLC-21",
+    "location": "Salt Lake City, UT",
+    "ambient_temp_c": 10.5,
+    "condition": "Clear",
+    "precipitation_prob_percent": 5,
+    "wind_speed_kmh": 9.4,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:35:00Z"
+  },
+  {
+    "station_id": "WX-CHE-22",
+    "location": "Cheyenne, WY",
+    "ambient_temp_c": 5.8,
+    "condition": "Strong Winds",
+    "precipitation_prob_percent": 20,
+    "wind_speed_kmh": 49.5,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:48:00Z"
+  },
+  {
+    "station_id": "WX-DEN-23",
     "location": "Denver, CO",
     "ambient_temp_c": 12.0,
     "condition": "Clear",
@@ -38,5 +188,315 @@
     "wind_speed_kmh": 12.0,
     "road_condition": "DRY",
     "updated_at": "2026-09-13T21:30:00Z"
+  },
+  {
+    "station_id": "WX-KC-24",
+    "location": "Kansas City, MO",
+    "ambient_temp_c": 20.3,
+    "condition": "Cloudy",
+    "precipitation_prob_percent": 40,
+    "wind_speed_kmh": 19.2,
+    "road_condition": "DAMP",
+    "updated_at": "2026-09-13T21:42:00Z"
+  },
+  {
+    "station_id": "WX-STL-25",
+    "location": "St. Louis, MO",
+    "ambient_temp_c": 21.7,
+    "condition": "Light Rain",
+    "precipitation_prob_percent": 70,
+    "wind_speed_kmh": 21.5,
+    "road_condition": "WET",
+    "updated_at": "2026-09-13T21:47:00Z"
+  },
+  {
+    "station_id": "WX-MEM-26",
+    "location": "Memphis, TN",
+    "ambient_temp_c": 26.1,
+    "condition": "Partly Cloudy",
+    "precipitation_prob_percent": 25,
+    "wind_speed_kmh": 12.7,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:40:00Z"
+  },
+  {
+    "station_id": "WX-CLT-27",
+    "location": "Charlotte, NC",
+    "ambient_temp_c": 23.9,
+    "condition": "Cloudy",
+    "precipitation_prob_percent": 35,
+    "wind_speed_kmh": 10.5,
+    "road_condition": "DAMP",
+    "updated_at": "2026-09-13T21:44:00Z"
+  },
+  {
+    "station_id": "WX-RDU-28",
+    "location": "Raleigh, NC",
+    "ambient_temp_c": 24.7,
+    "condition": "Clear",
+    "precipitation_prob_percent": 10,
+    "wind_speed_kmh": 8.9,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:41:00Z"
+  },
+  {
+    "station_id": "WX-VA-29",
+    "location": "Richmond, VA",
+    "ambient_temp_c": 22.8,
+    "condition": "Partly Cloudy",
+    "precipitation_prob_percent": 20,
+    "wind_speed_kmh": 13.6,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:38:00Z"
+  },
+  {
+    "station_id": "WX-BAL-30",
+    "location": "Baltimore, MD",
+    "ambient_temp_c": 21.5,
+    "condition": "Cloudy",
+    "precipitation_prob_percent": 30,
+    "wind_speed_kmh": 15.2,
+    "road_condition": "DAMP",
+    "updated_at": "2026-09-13T21:43:00Z"
+  },
+  {
+    "station_id": "WX-PHL-31",
+    "location": "Philadelphia, PA",
+    "ambient_temp_c": 20.9,
+    "condition": "Clear",
+    "precipitation_prob_percent": 5,
+    "wind_speed_kmh": 11.7,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:39:00Z"
+  },
+  {
+    "station_id": "WX-PIT-32",
+    "location": "Pittsburgh, PA",
+    "ambient_temp_c": 16.9,
+    "condition": "Light Rain",
+    "precipitation_prob_percent": 60,
+    "wind_speed_kmh": 18.7,
+    "road_condition": "WET",
+    "updated_at": "2026-09-13T21:46:00Z"
+  },
+  {
+    "station_id": "WX-CLE-33",
+    "location": "Cleveland, OH",
+    "ambient_temp_c": 15.8,
+    "condition": "Cloudy",
+    "precipitation_prob_percent": 45,
+    "wind_speed_kmh": 22.4,
+    "road_condition": "DAMP",
+    "updated_at": "2026-09-13T21:42:00Z"
+  },
+  {
+    "station_id": "WX-DET-34",
+    "location": "Detroit, MI",
+    "ambient_temp_c": 14.7,
+    "condition": "Cloudy",
+    "precipitation_prob_percent": 30,
+    "wind_speed_kmh": 17.8,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:37:00Z"
+  },
+  {
+    "station_id": "WX-MKE-35",
+    "location": "Milwaukee, WI",
+    "ambient_temp_c": 13.9,
+    "condition": "Clear",
+    "precipitation_prob_percent": 5,
+    "wind_speed_kmh": 14.3,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:36:00Z"
+  },
+  {
+    "station_id": "WX-MSP-36",
+    "location": "Minneapolis, MN",
+    "ambient_temp_c": 11.6,
+    "condition": "Cloudy",
+    "precipitation_prob_percent": 25,
+    "wind_speed_kmh": 16.1,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:34:00Z"
+  },
+  {
+    "station_id": "WX-OMA-37",
+    "location": "Omaha, NE",
+    "ambient_temp_c": 17.3,
+    "condition": "Partly Cloudy",
+    "precipitation_prob_percent": 15,
+    "wind_speed_kmh": 20.5,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:40:00Z"
+  },
+  {
+    "station_id": "WX-OKC-38",
+    "location": "Oklahoma City, OK",
+    "ambient_temp_c": 27.4,
+    "condition": "Clear",
+    "precipitation_prob_percent": 5,
+    "wind_speed_kmh": 24.6,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:45:00Z"
+  },
+  {
+    "station_id": "WX-ABQ-39",
+    "location": "Albuquerque, NM",
+    "ambient_temp_c": 23.1,
+    "condition": "Clear",
+    "precipitation_prob_percent": 10,
+    "wind_speed_kmh": 18.3,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:33:00Z"
+  },
+  {
+    "station_id": "WX-ELP-40",
+    "location": "El Paso, TX",
+    "ambient_temp_c": 29.8,
+    "condition": "Clear",
+    "precipitation_prob_percent": 2,
+    "wind_speed_kmh": 21.7,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:32:00Z"
+  },
+  {
+    "station_id": "WX-TUS-41",
+    "location": "Tucson, AZ",
+    "ambient_temp_c": 31.5,
+    "condition": "Partly Cloudy",
+    "precipitation_prob_percent": 15,
+    "wind_speed_kmh": 13.9,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:31:00Z"
+  },
+  {
+    "station_id": "WX-SD-42",
+    "location": "San Diego, CA",
+    "ambient_temp_c": 21.8,
+    "condition": "Clear",
+    "precipitation_prob_percent": 3,
+    "wind_speed_kmh": 9.8,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:35:00Z"
+  },
+  {
+    "station_id": "WX-SJC-43",
+    "location": "San Jose, CA",
+    "ambient_temp_c": 19.7,
+    "condition": "Clear",
+    "precipitation_prob_percent": 5,
+    "wind_speed_kmh": 12.2,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:34:00Z"
+  },
+  {
+    "station_id": "WX-SAC-44",
+    "location": "Sacramento, CA",
+    "ambient_temp_c": 24.9,
+    "condition": "Clear",
+    "precipitation_prob_percent": 0,
+    "wind_speed_kmh": 7.6,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:33:00Z"
+  },
+  {
+    "station_id": "WX-EUG-45",
+    "location": "Eugene, OR",
+    "ambient_temp_c": 13.6,
+    "condition": "Light Rain",
+    "precipitation_prob_percent": 72,
+    "wind_speed_kmh": 14.8,
+    "road_condition": "WET",
+    "updated_at": "2026-09-13T21:47:00Z"
+  },
+  {
+    "station_id": "WX-TAC-46",
+    "location": "Tacoma, WA",
+    "ambient_temp_c": 12.4,
+    "condition": "Rain",
+    "precipitation_prob_percent": 80,
+    "wind_speed_kmh": 19.6,
+    "road_condition": "WET",
+    "updated_at": "2026-09-13T21:48:00Z"
+  },
+  {
+    "station_id": "WX-SNO-47",
+    "location": "Snoqualmie Pass, WA",
+    "ambient_temp_c": -3.7,
+    "condition": "Heavy Snow & Ice",
+    "precipitation_prob_percent": 96,
+    "wind_speed_kmh": 61.2,
+    "road_condition": "ICY_BLOCKED",
+    "updated_at": "2026-09-13T21:50:00Z"
+  },
+  {
+    "station_id": "WX-GJT-48",
+    "location": "Grand Junction, CO",
+    "ambient_temp_c": 9.8,
+    "condition": "Clear",
+    "precipitation_prob_percent": 5,
+    "wind_speed_kmh": 17.4,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:36:00Z"
+  },
+  {
+    "station_id": "WX-REN-49",
+    "location": "Reno, NV",
+    "ambient_temp_c": 8.7,
+    "condition": "Strong Winds",
+    "precipitation_prob_percent": 15,
+    "wind_speed_kmh": 42.8,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:49:00Z"
+  },
+  {
+    "station_id": "WX-BOU-50",
+    "location": "Boulder, CO",
+    "ambient_temp_c": 10.9,
+    "condition": "Partly Cloudy",
+    "precipitation_prob_percent": 20,
+    "wind_speed_kmh": 15.6,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:40:00Z"
+  },
+  {
+    "station_id": "WX-SAV-51",
+    "location": "Savannah, GA",
+    "ambient_temp_c": 27.6,
+    "condition": "Humid & Cloudy",
+    "precipitation_prob_percent": 40,
+    "wind_speed_kmh": 14.1,
+    "road_condition": "DAMP",
+    "updated_at": "2026-09-13T21:43:00Z"
+  },
+  {
+    "station_id": "WX-JAX-52",
+    "location": "Jacksonville, FL",
+    "ambient_temp_c": 28.9,
+    "condition": "Partly Cloudy",
+    "precipitation_prob_percent": 25,
+    "wind_speed_kmh": 12.6,
+    "road_condition": "DRY",
+    "updated_at": "2026-09-13T21:41:00Z"
+  },
+  {
+    "station_id": "WX-MIA-53",
+    "location": "Miami, FL",
+    "ambient_temp_c": 30.1,
+    "condition": "Scattered Thunderstorms",
+    "precipitation_prob_percent": 75,
+    "wind_speed_kmh": 22.8,
+    "road_condition": "WET",
+    "updated_at": "2026-09-13T21:49:00Z"
+  },
+  {
+    "station_id": "WX-TPA-54",
+    "location": "Tampa, FL",
+    "ambient_temp_c": 29.4,
+    "condition": "Thunderstorms",
+    "precipitation_prob_percent": 85,
+    "wind_speed_kmh": 25.1,
+    "road_condition": "WET",
+    "updated_at": "2026-09-13T21:50:00Z"
   }
 ]

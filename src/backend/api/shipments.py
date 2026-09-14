@@ -3,12 +3,13 @@ Shipments API router — /api/shipments/*
 
 Endpoints
 ---------
-GET /api/shipments                       List all shipments
-GET /api/shipments/{shipment_id}         Get one shipment
-GET /api/shipments/{shipment_id}/risk    Run Risk Engine for one shipment
-GET /api/shipments/{shipment_id}/cold-chain  Run Cold-Chain Engine
-GET /api/shipments/{shipment_id}/routes      Run Route Optimizer
-GET /api/shipments/{shipment_id}/fleet-match Run Fleet Matcher
+GET  /api/shipments                       List all shipments
+POST /api/shipments                       Create a new shipment
+GET  /api/shipments/{shipment_id}         Get one shipment
+GET  /api/shipments/{shipment_id}/risk    Run Risk Engine for one shipment
+GET  /api/shipments/{shipment_id}/cold-chain  Run Cold-Chain Engine
+GET  /api/shipments/{shipment_id}/routes      Run Route Optimizer
+GET  /api/shipments/{shipment_id}/fleet-match Run Fleet Matcher
 
 All engine-compute endpoints follow the same thin pattern:
   DB lookup → 404 if missing → Engine(session) → dataclasses.asdict()
@@ -38,7 +39,7 @@ from src.backend.schemas.engine_responses import (
     RouteOptimizerResponse,
     ShipmentRiskResponse,
 )
-from src.backend.schemas.shipment import ShipmentResponse
+from src.backend.schemas.shipment import ShipmentCreate, ShipmentResponse
 
 router = APIRouter()
 
@@ -66,6 +67,26 @@ def list_shipments(db: Session = Depends(get_db)):
     """Return all shipments from the database."""
     shipments = db.query(Shipment).all()
     return [ShipmentResponse.model_validate(s) for s in shipments]
+
+
+# ---------------------------------------------------------------------------
+# Create a new shipment
+# ---------------------------------------------------------------------------
+
+@router.post("/", response_model=ShipmentResponse, status_code=201)
+def create_shipment(payload: ShipmentCreate, db: Session = Depends(get_db)):
+    """Create a new shipment record.  Returns 409 if the ID already exists."""
+    existing = db.get(Shipment, payload.id)
+    if existing:
+        raise HTTPException(
+            status_code=409,
+            detail=f"Shipment {payload.id!r} already exists",
+        )
+    shp = Shipment(**payload.model_dump())
+    db.add(shp)
+    db.commit()
+    db.refresh(shp)
+    return ShipmentResponse.model_validate(shp)
 
 
 # ---------------------------------------------------------------------------

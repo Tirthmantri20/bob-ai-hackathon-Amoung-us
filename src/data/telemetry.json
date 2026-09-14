@@ -1,59 +1,895 @@
 [
   {
-    "telemetry_id": "TEL-FLT-302",
-    "vehicle_id": "FLT-302",
-    "shipment_id": "SHP-1001",
-    "timestamp": "2026-09-13T22:00:00Z",
-    "cargo_temp_c": 4.2,
+    "telemetry_id": "TEL-FLT-301",
+    "vehicle_id": "FLT-301",
+    "shipment_id": "SHP-1004",
+    "timestamp": "2026-09-13T22:05:00Z",
+    "cargo_temp_c": 3.8,
     "cargo_temp_target_c": 4.0,
-    "temp_deviation_c": 0.2,
-    "cargo_humidity_percent": 48.1,
+    "temp_deviation_c": -0.2,
+    "cargo_humidity_percent": 51.4,
     "reefer_compressor_status": "NORMAL_CYCLING",
     "door_sensor": "CLOSED",
-    "vibration_g": 0.12,
+    "vibration_g": 0.14,
     "gps": {
-      "lat": 39.7817,
-      "lon": -86.1477,
-      "speed_kmh": 88.5,
-      "heading_deg": 142
+      "lat": 32.7767,
+      "lon": -96.7970,
+      "speed_kmh": 82.0,
+      "heading_deg": 180
     }
   },
   {
-    "telemetry_id": "TEL-FLT-109",
-    "vehicle_id": "FLT-109",
-    "shipment_id": "SHP-1002",
-    "timestamp": "2026-09-13T22:00:00Z",
-    "cargo_temp_c": -17.2,
+    "telemetry_id": "TEL-FLT-302",
+    "vehicle_id": "FLT-302",
+    "shipment_id": "SHP-1001",
+    "timestamp": "2026-09-13T22:05:00Z",
+    "cargo_temp_c": 4.4,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": 0.4,
+    "cargo_humidity_percent": 49.2,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.11,
+    "gps": {
+      "lat": 39.7921,
+      "lon": -86.1621,
+      "speed_kmh": 91.2,
+      "heading_deg": 145
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-303",
+    "vehicle_id": "FLT-303",
+    "shipment_id": "SHP-1005",
+    "timestamp": "2026-09-13T22:05:00Z",
+    "cargo_temp_c": -19.4,
     "cargo_temp_target_c": -20.0,
-    "temp_deviation_c": 2.8,
-    "cargo_humidity_percent": 65.0,
+    "temp_deviation_c": 0.6,
+    "cargo_humidity_percent": 62.8,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.21,
+    "gps": {
+      "lat": 34.0522,
+      "lon": -118.2437,
+      "speed_kmh": 67.5,
+      "heading_deg": 270
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-305",
+    "vehicle_id": "FLT-305",
+    "shipment_id": "SHP-1006",
+    "timestamp": "2026-09-13T22:05:00Z",
+    "cargo_temp_c": 3.1,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": -0.9,
+    "cargo_humidity_percent": 54.7,
+    "reefer_compressor_status": "STABLE_ELECTRIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.09,
+    "gps": {
+      "lat": 26.7153,
+      "lon": -80.0534,
+      "speed_kmh": 72.0,
+      "heading_deg": 15
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-306",
+    "vehicle_id": "FLT-306",
+    "shipment_id": "SHP-1007",
+    "timestamp": "2026-09-13T22:10:00Z",
+    "cargo_temp_c": -21.2,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": -1.2,
+    "cargo_humidity_percent": 61.3,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.18,
+    "gps": {
+      "lat": 39.7684,
+      "lon": -86.1581,
+      "speed_kmh": 84.3,
+      "heading_deg": 165
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-307",
+    "vehicle_id": "FLT-307",
+    "shipment_id": "SHP-1008",
+    "timestamp": "2026-09-13T22:10:00Z",
+    "cargo_temp_c": -69.8,
+    "cargo_temp_target_c": -70.0,
+    "temp_deviation_c": 0.2,
+    "cargo_humidity_percent": 16.8,
+    "reefer_compressor_status": "STABLE_CRYOGENIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.07,
+    "gps": {
+      "lat": 42.3601,
+      "lon": -71.0589,
+      "speed_kmh": 78.5,
+      "heading_deg": 250
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-308",
+    "vehicle_id": "FLT-308",
+    "shipment_id": "SHP-1009",
+    "timestamp": "2026-09-13T22:10:00Z",
+    "cargo_temp_c": -18.6,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": 1.4,
+    "cargo_humidity_percent": 67.2,
     "reefer_compressor_status": "WARNING_HIGH_LOAD",
     "door_sensor": "CLOSED",
-    "vibration_g": 0.38,
+    "vibration_g": 0.31,
+    "gps": {
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "speed_kmh": 46.0,
+      "heading_deg": 110
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-309",
+    "vehicle_id": "FLT-309",
+    "shipment_id": "SHP-1010",
+    "timestamp": "2026-09-13T22:15:00Z",
+    "cargo_temp_c": 4.7,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": 0.7,
+    "cargo_humidity_percent": 52.6,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.16,
+    "gps": {
+      "lat": 33.7490,
+      "lon": -84.3880,
+      "speed_kmh": 61.5,
+      "heading_deg": 90
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-310",
+    "vehicle_id": "FLT-310",
+    "shipment_id": "SHP-1011",
+    "timestamp": "2026-09-13T22:15:00Z",
+    "cargo_temp_c": 2.9,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": -1.1,
+    "cargo_humidity_percent": 55.8,
+    "reefer_compressor_status": "STABLE_ELECTRIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.08,
+    "gps": {
+      "lat": 42.3314,
+      "lon": -83.0458,
+      "speed_kmh": 69.0,
+      "heading_deg": 130
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-311",
+    "vehicle_id": "FLT-311",
+    "shipment_id": "SHP-1012",
+    "timestamp": "2026-09-13T22:15:00Z",
+    "cargo_temp_c": 5.2,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": 1.2,
+    "cargo_humidity_percent": 50.1,
+    "reefer_compressor_status": "WARNING_HIGH_LOAD",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.27,
+    "gps": {
+      "lat": 40.7128,
+      "lon": -74.0060,
+      "speed_kmh": 52.0,
+      "heading_deg": 45
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-312",
+    "vehicle_id": "FLT-312",
+    "shipment_id": "SHP-1013",
+    "timestamp": "2026-09-13T22:20:00Z",
+    "cargo_temp_c": -20.1,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": -0.1,
+    "cargo_humidity_percent": 60.5,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.19,
     "gps": {
       "lat": 45.5152,
       "lon": -122.6784,
-      "speed_kmh": 32.0,
+      "speed_kmh": 74.0,
       "heading_deg": 95
     }
   },
   {
-    "telemetry_id": "TEL-FLT-514",
-    "vehicle_id": "FLT-514",
-    "shipment_id": "SHP-1003",
-    "timestamp": "2026-09-13T22:00:00Z",
-    "cargo_temp_c": -71.4,
+    "telemetry_id": "TEL-FLT-313",
+    "vehicle_id": "FLT-313",
+    "shipment_id": "SHP-1014",
+    "timestamp": "2026-09-13T22:20:00Z",
+    "cargo_temp_c": -72.3,
     "cargo_temp_target_c": -70.0,
-    "temp_deviation_c": -1.4,
-    "cargo_humidity_percent": 15.2,
+    "temp_deviation_c": -2.3,
+    "cargo_humidity_percent": 14.7,
+    "reefer_compressor_status": "STABLE_CRYOGENIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.06,
+    "gps": {
+      "lat": 39.9526,
+      "lon": -75.1652,
+      "speed_kmh": 89.0,
+      "heading_deg": 220
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-315",
+    "vehicle_id": "FLT-315",
+    "shipment_id": "SHP-1015",
+    "timestamp": "2026-09-13T22:20:00Z",
+    "cargo_temp_c": 4.1,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": 0.1,
+    "cargo_humidity_percent": 47.9,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.13,
+    "gps": {
+      "lat": 35.2271,
+      "lon": -80.8431,
+      "speed_kmh": 81.0,
+      "heading_deg": 175
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-316",
+    "vehicle_id": "FLT-316",
+    "shipment_id": "SHP-1016",
+    "timestamp": "2026-09-13T22:25:00Z",
+    "cargo_temp_c": -19.7,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": 0.3,
+    "cargo_humidity_percent": 63.1,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.15,
+    "gps": {
+      "lat": 36.1627,
+      "lon": -86.7816,
+      "speed_kmh": 86.0,
+      "heading_deg": 120
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-317",
+    "vehicle_id": "FLT-317",
+    "shipment_id": "SHP-1017",
+    "timestamp": "2026-09-13T22:25:00Z",
+    "cargo_temp_c": -18.1,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": 1.9,
+    "cargo_humidity_percent": 69.4,
+    "reefer_compressor_status": "WARNING_HIGH_LOAD",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.36,
+    "gps": {
+      "lat": 44.9778,
+      "lon": -93.2650,
+      "speed_kmh": 38.0,
+      "heading_deg": 80
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-318",
+    "vehicle_id": "FLT-318",
+    "shipment_id": "SHP-1018",
+    "timestamp": "2026-09-13T22:25:00Z",
+    "cargo_temp_c": -70.6,
+    "cargo_temp_target_c": -70.0,
+    "temp_deviation_c": -0.6,
+    "cargo_humidity_percent": 17.1,
+    "reefer_compressor_status": "STABLE_CRYOGENIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.09,
+    "gps": {
+      "lat": 39.7392,
+      "lon": -104.9903,
+      "speed_kmh": 92.0,
+      "heading_deg": 210
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-319",
+    "vehicle_id": "FLT-319",
+    "shipment_id": "SHP-1019",
+    "timestamp": "2026-09-13T22:30:00Z",
+    "cargo_temp_c": -20.8,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": -0.8,
+    "cargo_humidity_percent": 59.8,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.22,
+    "gps": {
+      "lat": 40.7608,
+      "lon": -111.8910,
+      "speed_kmh": 77.5,
+      "heading_deg": 270
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-320",
+    "vehicle_id": "FLT-320",
+    "shipment_id": "SHP-1020",
+    "timestamp": "2026-09-13T22:30:00Z",
+    "cargo_temp_c": 3.6,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": -0.4,
+    "cargo_humidity_percent": 53.2,
+    "reefer_compressor_status": "STABLE_ELECTRIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.07,
+    "gps": {
+      "lat": 36.1699,
+      "lon": -115.1398,
+      "speed_kmh": 73.0,
+      "heading_deg": 315
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-321",
+    "vehicle_id": "FLT-321",
+    "shipment_id": "SHP-1021",
+    "timestamp": "2026-09-13T22:30:00Z",
+    "cargo_temp_c": 4.9,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": 0.9,
+    "cargo_humidity_percent": 56.4,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.17,
+    "gps": {
+      "lat": 41.1400,
+      "lon": -104.8202,
+      "speed_kmh": 88.0,
+      "heading_deg": 190
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-322",
+    "vehicle_id": "FLT-322",
+    "shipment_id": "SHP-1022",
+    "timestamp": "2026-09-13T22:35:00Z",
+    "cargo_temp_c": -17.4,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": 2.6,
+    "cargo_humidity_percent": 71.2,
+    "reefer_compressor_status": "WARNING_HIGH_LOAD",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.42,
+    "gps": {
+      "lat": 39.0997,
+      "lon": -94.5786,
+      "speed_kmh": 29.5,
+      "heading_deg": 135
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-323",
+    "vehicle_id": "FLT-323",
+    "shipment_id": "SHP-1023",
+    "timestamp": "2026-09-13T22:35:00Z",
+    "cargo_temp_c": 3.9,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": -0.1,
+    "cargo_humidity_percent": 50.8,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.12,
+    "gps": {
+      "lat": 39.7684,
+      "lon": -86.1581,
+      "speed_kmh": 79.0,
+      "heading_deg": 150
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-324",
+    "vehicle_id": "FLT-324",
+    "shipment_id": "SHP-1024",
+    "timestamp": "2026-09-13T22:35:00Z",
+    "cargo_temp_c": -68.9,
+    "cargo_temp_target_c": -70.0,
+    "temp_deviation_c": 1.1,
+    "cargo_humidity_percent": 18.3,
+    "reefer_compressor_status": "STABLE_CRYOGENIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.11,
+    "gps": {
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "speed_kmh": 83.0,
+      "heading_deg": 230
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-325",
+    "vehicle_id": "FLT-325",
+    "shipment_id": "SHP-1025",
+    "timestamp": "2026-09-13T22:40:00Z",
+    "cargo_temp_c": -20.4,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": -0.4,
+    "cargo_humidity_percent": 64.7,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.20,
+    "gps": {
+      "lat": 43.0389,
+      "lon": -87.9065,
+      "speed_kmh": 68.0,
+      "heading_deg": 100
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-326",
+    "vehicle_id": "FLT-326",
+    "shipment_id": "SHP-1026",
+    "timestamp": "2026-09-13T22:40:00Z",
+    "cargo_temp_c": 5.6,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": 1.6,
+    "cargo_humidity_percent": 58.9,
+    "reefer_compressor_status": "WARNING_HIGH_LOAD",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.29,
+    "gps": {
+      "lat": 38.2527,
+      "lon": -85.7585,
+      "speed_kmh": 44.0,
+      "heading_deg": 60
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-327",
+    "vehicle_id": "FLT-327",
+    "shipment_id": "SHP-1027",
+    "timestamp": "2026-09-13T22:40:00Z",
+    "cargo_temp_c": 3.4,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": -0.6,
+    "cargo_humidity_percent": 52.1,
+    "reefer_compressor_status": "STABLE_ELECTRIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.06,
+    "gps": {
+      "lat": 41.8240,
+      "lon": -71.4128,
+      "speed_kmh": 65.5,
+      "heading_deg": 35
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-328",
+    "vehicle_id": "FLT-328",
+    "shipment_id": "SHP-1028",
+    "timestamp": "2026-09-13T22:45:00Z",
+    "cargo_temp_c": -19.2,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": 0.8,
+    "cargo_humidity_percent": 61.7,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.16,
+    "gps": {
+      "lat": 41.2565,
+      "lon": -95.9345,
+      "speed_kmh": 87.0,
+      "heading_deg": 175
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-329",
+    "vehicle_id": "FLT-329",
+    "shipment_id": "SHP-1029",
+    "timestamp": "2026-09-13T22:45:00Z",
+    "cargo_temp_c": -21.0,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": -1.0,
+    "cargo_humidity_percent": 66.5,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.23,
+    "gps": {
+      "lat": 39.9612,
+      "lon": -82.9988,
+      "speed_kmh": 81.5,
+      "heading_deg": 200
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-330",
+    "vehicle_id": "FLT-330",
+    "shipment_id": "SHP-1030",
+    "timestamp": "2026-09-13T22:45:00Z",
+    "cargo_temp_c": -71.7,
+    "cargo_temp_target_c": -70.0,
+    "temp_deviation_c": -1.7,
+    "cargo_humidity_percent": 15.6,
     "reefer_compressor_status": "STABLE_CRYOGENIC",
     "door_sensor": "CLOSED",
     "vibration_g": 0.08,
     "gps": {
+      "lat": 40.6895,
+      "lon": -74.1745,
+      "speed_kmh": 76.0,
+      "heading_deg": 240
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-331",
+    "vehicle_id": "FLT-331",
+    "shipment_id": "SHP-1031",
+    "timestamp": "2026-09-13T22:50:00Z",
+    "cargo_temp_c": 4.3,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": 0.3,
+    "cargo_humidity_percent": 49.7,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.14,
+    "gps": {
+      "lat": 39.0997,
+      "lon": -94.5786,
+      "speed_kmh": 83.0,
+      "heading_deg": 160
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-333",
+    "vehicle_id": "FLT-333",
+    "shipment_id": "SHP-1032",
+    "timestamp": "2026-09-13T22:50:00Z",
+    "cargo_temp_c": -18.7,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": 1.3,
+    "cargo_humidity_percent": 68.2,
+    "reefer_compressor_status": "WARNING_HIGH_LOAD",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.34,
+    "gps": {
+      "lat": 29.7604,
+      "lon": -95.3698,
+      "speed_kmh": 51.0,
+      "heading_deg": 85
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-334",
+    "vehicle_id": "FLT-334",
+    "shipment_id": "SHP-1033",
+    "timestamp": "2026-09-13T22:50:00Z",
+    "cargo_temp_c": -20.3,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": -0.3,
+    "cargo_humidity_percent": 62.1,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.17,
+    "gps": {
+      "lat": 41.8781,
+      "lon": -87.6298,
+      "speed_kmh": 72.0,
+      "heading_deg": 145
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-335",
+    "vehicle_id": "FLT-335",
+    "shipment_id": "SHP-1034",
+    "timestamp": "2026-09-13T22:55:00Z",
+    "cargo_temp_c": 4.6,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": 0.6,
+    "cargo_humidity_percent": 51.6,
+    "reefer_compressor_status": "STABLE_ELECTRIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.09,
+    "gps": {
+      "lat": 30.2672,
+      "lon": -97.7431,
+      "speed_kmh": 70.5,
+      "heading_deg": 180
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-336",
+    "vehicle_id": "FLT-336",
+    "shipment_id": "SHP-1035",
+    "timestamp": "2026-09-13T22:55:00Z",
+    "cargo_temp_c": -69.4,
+    "cargo_temp_target_c": -70.0,
+    "temp_deviation_c": 0.6,
+    "cargo_humidity_percent": 16.2,
+    "reefer_compressor_status": "STABLE_CRYOGENIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.07,
+    "gps": {
+      "lat": 34.0522,
+      "lon": -118.2437,
+      "speed_kmh": 88.0,
+      "heading_deg": 125
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-337",
+    "vehicle_id": "FLT-337",
+    "shipment_id": "SHP-1036",
+    "timestamp": "2026-09-13T22:55:00Z",
+    "cargo_temp_c": 5.4,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": 1.4,
+    "cargo_humidity_percent": 57.8,
+    "reefer_compressor_status": "WARNING_HIGH_LOAD",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.32,
+    "gps": {
+      "lat": 32.7767,
+      "lon": -96.7970,
+      "speed_kmh": 48.0,
+      "heading_deg": 75
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-338",
+    "vehicle_id": "FLT-338",
+    "shipment_id": "SHP-1037",
+    "timestamp": "2026-09-13T23:00:00Z",
+    "cargo_temp_c": -19.8,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": 0.2,
+    "cargo_humidity_percent": 64.2,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.18,
+    "gps": {
+      "lat": 36.1255,
+      "lon": -86.6856,
+      "speed_kmh": 85.0,
+      "heading_deg": 155
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-339",
+    "vehicle_id": "FLT-339",
+    "shipment_id": "SHP-1038",
+    "timestamp": "2026-09-13T23:00:00Z",
+    "cargo_temp_c": -20.6,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": -0.6,
+    "cargo_humidity_percent": 60.9,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.13,
+    "gps": {
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "speed_kmh": 63.0,
+      "heading_deg": 310
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-340",
+    "vehicle_id": "FLT-340",
+    "shipment_id": "SHP-1039",
+    "timestamp": "2026-09-13T23:00:00Z",
+    "cargo_temp_c": 3.7,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": -0.3,
+    "cargo_humidity_percent": 54.3,
+    "reefer_compressor_status": "STABLE_ELECTRIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.08,
+    "gps": {
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "speed_kmh": 75.0,
+      "heading_deg": 205
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-341",
+    "vehicle_id": "FLT-341",
+    "shipment_id": "SHP-1040",
+    "timestamp": "2026-09-13T23:05:00Z",
+    "cargo_temp_c": 6.2,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": 2.2,
+    "cargo_humidity_percent": 61.5,
+    "reefer_compressor_status": "CRITICAL_COOLING_FAILURE",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.39,
+    "gps": {
+      "lat": 40.7128,
+      "lon": -74.0060,
+      "speed_kmh": 34.0,
+      "heading_deg": 95
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-342",
+    "vehicle_id": "FLT-342",
+    "shipment_id": "SHP-1041",
+    "timestamp": "2026-09-13T23:05:00Z",
+    "cargo_temp_c": -70.2,
+    "cargo_temp_target_c": -70.0,
+    "temp_deviation_c": -0.2,
+    "cargo_humidity_percent": 15.9,
+    "reefer_compressor_status": "STABLE_CRYOGENIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.06,
+    "gps": {
+      "lat": 42.3601,
+      "lon": -71.0589,
+      "speed_kmh": 91.0,
+      "heading_deg": 260
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-343",
+    "vehicle_id": "FLT-343",
+    "shipment_id": "SHP-1042",
+    "timestamp": "2026-09-13T23:05:00Z",
+    "cargo_temp_c": -19.3,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": 0.7,
+    "cargo_humidity_percent": 65.4,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.21,
+    "gps": {
+      "lat": 33.4484,
+      "lon": -112.0740,
+      "speed_kmh": 79.0,
+      "heading_deg": 110
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-344",
+    "vehicle_id": "FLT-344",
+    "shipment_id": "SHP-1043",
+    "timestamp": "2026-09-13T23:10:00Z",
+    "cargo_temp_c": 4.0,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": 0.0,
+    "cargo_humidity_percent": 48.8,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.10,
+    "gps": {
+      "lat": 39.7817,
+      "lon": -86.1477,
+      "speed_kmh": 90.0,
+      "heading_deg": 140
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-345",
+    "vehicle_id": "FLT-345",
+    "shipment_id": "SHP-1044",
+    "timestamp": "2026-09-13T23:10:00Z",
+    "cargo_temp_c": -18.9,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": 1.1,
+    "cargo_humidity_percent": 67.8,
+    "reefer_compressor_status": "WARNING_HIGH_LOAD",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.28,
+    "gps": {
+      "lat": 29.9511,
+      "lon": -90.0715,
+      "speed_kmh": 57.0,
+      "heading_deg": 190
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-346",
+    "vehicle_id": "FLT-346",
+    "shipment_id": "SHP-1045",
+    "timestamp": "2026-09-13T23:10:00Z",
+    "cargo_temp_c": -20.2,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": -0.2,
+    "cargo_humidity_percent": 62.4,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.16,
+    "gps": {
+      "lat": 35.1495,
+      "lon": -90.0490,
+      "speed_kmh": 82.0,
+      "heading_deg": 245
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-347",
+    "vehicle_id": "FLT-347",
+    "shipment_id": "SHP-1046",
+    "timestamp": "2026-09-13T23:15:00Z",
+    "cargo_temp_c": -71.1,
+    "cargo_temp_target_c": -70.0,
+    "temp_deviation_c": -1.1,
+    "cargo_humidity_percent": 16.5,
+    "reefer_compressor_status": "STABLE_CRYOGENIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.09,
+    "gps": {
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "speed_kmh": 84.0,
+      "heading_deg": 315
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-348",
+    "vehicle_id": "FLT-348",
+    "shipment_id": "SHP-1047",
+    "timestamp": "2026-09-13T23:15:00Z",
+    "cargo_temp_c": 3.2,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": -0.8,
+    "cargo_humidity_percent": 53.6,
+    "reefer_compressor_status": "STABLE_ELECTRIC",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.07,
+    "gps": {
+      "lat": 45.5152,
+      "lon": -122.6784,
+      "speed_kmh": 71.0,
+      "heading_deg": 160
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-349",
+    "vehicle_id": "FLT-349",
+    "shipment_id": "SHP-1048",
+    "timestamp": "2026-09-13T23:15:00Z",
+    "cargo_temp_c": 5.1,
+    "cargo_temp_target_c": 4.0,
+    "temp_deviation_c": 1.1,
+    "cargo_humidity_percent": 59.1,
+    "reefer_compressor_status": "WARNING_HIGH_LOAD",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.25,
+    "gps": {
+      "lat": 30.3322,
+      "lon": -81.6557,
+      "speed_kmh": 53.0,
+      "heading_deg": 35
+    }
+  },
+  {
+    "telemetry_id": "TEL-FLT-350",
+    "vehicle_id": "FLT-350",
+    "shipment_id": "SHP-1049",
+    "timestamp": "2026-09-13T23:20:00Z",
+    "cargo_temp_c": -19.6,
+    "cargo_temp_target_c": -20.0,
+    "temp_deviation_c": 0.4,
+    "cargo_humidity_percent": 63.7,
+    "reefer_compressor_status": "NORMAL_CYCLING",
+    "door_sensor": "CLOSED",
+    "vibration_g": 0.18,
+    "gps": {
       "lat": 39.9526,
       "lon": -75.1652,
-      "speed_kmh": 94.0,
-      "heading_deg": 220
+      "speed_kmh": 76.5,
+      "heading_deg": 125
     }
   }
 ]

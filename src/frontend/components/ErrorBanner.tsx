@@ -10,15 +10,15 @@ interface ErrorBannerProps {
 export default function ErrorBanner({ message, onRetry }: ErrorBannerProps) {
   return (
     <div
-      className="flex items-center gap-3 rounded-lg border border-red-500 bg-red-900/30 p-4 text-red-300"
+      className="flex items-center gap-3 rounded-xl border border-red-200 bg-red-50 p-4 text-red-800 shadow-sm"
       role="alert"
     >
-      <span className="text-lg" aria-hidden="true">⚠</span>
-      <span className="flex-1 text-sm">{message}</span>
+      <span className="text-xl" aria-hidden="true">⚠</span>
+      <span className="flex-1 text-sm font-medium">{message}</span>
       {onRetry && (
         <button
           onClick={onRetry}
-          className="rounded bg-red-700 px-3 py-1 text-xs font-semibold text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400"
+          className="rounded-lg bg-red-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 shadow-xs"
         >
           Retry
         </button>

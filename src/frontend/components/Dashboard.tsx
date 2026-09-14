@@ -221,10 +221,10 @@ export default function Dashboard() {
 
   // ── Render ────────────────────────────────────────────────────────────────
   return (
-    <div className="flex min-h-screen flex-col bg-gray-950 text-gray-100">
+    <div className="flex min-h-screen flex-col bg-slate-100 text-slate-900">
       <Header backendHealthy={backendHealthy} watsonxLive={watsonxLive} />
 
-      <main className="flex-1 p-4 space-y-4">
+      <main className="flex-1 p-4 md:p-6 space-y-4 max-w-7xl mx-auto w-full">
         {mountError && (
           <ErrorBanner
             message={mountError}
@@ -238,12 +238,53 @@ export default function Dashboard() {
 
         {!mountLoading && !mountError && (
           <>
+            {/* ── KPI Summary Cards ── */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <div className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Active Shipments</span>
+                  <span className="text-base">📦</span>
+                </div>
+                <p className="mt-1 text-2xl font-black text-slate-900 tabular-nums">{shipments.length}</p>
+                <p className="text-[11px] text-slate-500 font-medium">Real-time GPS tracked</p>
+              </div>
+
+              <div className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-500">High Risk Alerts</span>
+                  <span className="text-base">🚨</span>
+                </div>
+                <p className="mt-1 text-2xl font-black text-red-600 tabular-nums">
+                  {Array.from(activeRisks.values()).filter((r) => r.severity === 'CRITICAL' || r.severity === 'HIGH').length}
+                </p>
+                <p className="text-[11px] text-slate-500 font-medium">Requiring immediate action</p>
+              </div>
+
+              <div className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Active Disruptions</span>
+                  <span className="text-base">⚠️</span>
+                </div>
+                <p className="mt-1 text-2xl font-black text-amber-600 tabular-nums">{disruptions.length}</p>
+                <p className="text-[11px] text-slate-500 font-medium">Weather &amp; corridor halts</p>
+              </div>
+
+              <div className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Monitored Routes</span>
+                  <span className="text-base">🛣️</span>
+                </div>
+                <p className="mt-1 text-2xl font-black text-blue-600 tabular-nums">{routes.length}</p>
+                <p className="text-[11px] text-slate-500 font-medium">Optimized bypass corridors</p>
+              </div>
+            </div>
+
             {/* ── Upper grid: roster + disruptions + map ── */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-              {/* Left col: shipment roster */}
+              {/* Left col: shipment roster & disruptions */}
               <div className="lg:col-span-1 space-y-4">
-                <section className="rounded-lg border border-gray-800 bg-gray-900 p-4">
-                  <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-gray-500">
+                <section className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                  <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-500">
                     Active Shipments ({shipments.length})
                   </h2>
                   <ShipmentRoster
@@ -254,8 +295,8 @@ export default function Dashboard() {
                   />
                 </section>
 
-                <section className="rounded-lg border border-gray-800 bg-gray-900 p-4">
-                  <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-gray-500">
+                <section className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                  <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-500">
                     Disruption Monitor ({disruptions.length})
                   </h2>
                   <DisruptionMonitor
@@ -267,22 +308,30 @@ export default function Dashboard() {
               </div>
 
               {/* Right col: map */}
-              <div className="lg:col-span-2 rounded-lg border border-gray-800 bg-gray-900 overflow-hidden" style={{ minHeight: '380px' }}>
-                <ControlTowerMap
-                  shipments={shipments}
-                  activeRisks={activeRisks}
-                  disruptions={disruptions}
-                  disruptionImpacts={disruptionImpacts}
-                  routes={routes}
-                  selectedShipmentId={selectedShipmentId}
-                  selectedDisruptionId={selectedDisruptionId}
-                />
+              <div className="lg:col-span-2 rounded-xl border border-slate-200 bg-white p-2 shadow-sm overflow-hidden flex flex-col" style={{ minHeight: '400px' }}>
+                <div className="px-2 py-1.5 border-b border-slate-100 flex items-center justify-between">
+                  <h2 className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                    Geospatial Fleet &amp; Disruption Map
+                  </h2>
+                  <span className="text-[11px] text-slate-400">Click pins for live telematics</span>
+                </div>
+                <div className="flex-1 w-full rounded-lg overflow-hidden relative min-h-[350px]">
+                  <ControlTowerMap
+                    shipments={shipments}
+                    activeRisks={activeRisks}
+                    disruptions={disruptions}
+                    disruptionImpacts={disruptionImpacts}
+                    routes={routes}
+                    selectedShipmentId={selectedShipmentId}
+                    selectedDisruptionId={selectedDisruptionId}
+                  />
+                </div>
               </div>
             </div>
 
             {/* ── Shipment detail ── */}
-            <section className="rounded-lg border border-gray-800 bg-gray-900 p-4">
-              <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-gray-500">
+            <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+              <h2 className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-500">
                 Shipment Detail
               </h2>
               <ShipmentDetailPanel
@@ -297,8 +346,8 @@ export default function Dashboard() {
             </section>
 
             {/* ── Disruption impact ── */}
-            <section className="rounded-lg border border-gray-800 bg-gray-900 p-4">
-              <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-gray-500">
+            <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+              <h2 className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-500">
                 Disruption Impact
               </h2>
               <DisruptionImpactPanel
@@ -311,8 +360,8 @@ export default function Dashboard() {
 
             {/* ── AI brief panels (independent) ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-              <section className="rounded-lg border border-gray-800 bg-gray-900 p-4">
-                <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-gray-500">
+              <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-500">
                   AI Operational Brief — Shipment
                 </h2>
                 <AIBriefPanel
@@ -324,8 +373,8 @@ export default function Dashboard() {
                 />
               </section>
 
-              <section className="rounded-lg border border-gray-800 bg-gray-900 p-4">
-                <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-gray-500">
+              <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-500">
                   AI Operational Brief — Disruption
                 </h2>
                 <AIBriefPanel
@@ -341,8 +390,8 @@ export default function Dashboard() {
         )}
       </main>
 
-      <footer className="border-t border-gray-800 px-6 py-3 text-center text-xs text-gray-700">
-        SupplyGuard AI — Powered by IBM watsonx.ai &amp; Granite
+      <footer className="border-t border-slate-200 bg-white px-6 py-3.5 text-center text-xs text-slate-500 font-medium shadow-xs">
+        SupplyGuard AI &bull; Autonomous Supply Chain Intelligence powered by IBM watsonx.ai &amp; Granite
       </footer>
     </div>
   )

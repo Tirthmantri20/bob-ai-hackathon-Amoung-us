@@ -9,12 +9,12 @@ interface LoadingSpinnerProps {
 export default function LoadingSpinner({ label = 'Loading…' }: LoadingSpinnerProps) {
   return (
     <div
-      className="flex items-center justify-center gap-2 py-6 text-gray-400"
+      className="flex items-center justify-center gap-2 py-6 text-slate-500 font-medium"
       role="status"
       aria-label={label}
     >
       <svg
-        className="h-5 w-5 animate-spin text-blue-400"
+        className="h-5 w-5 animate-spin text-blue-600"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"

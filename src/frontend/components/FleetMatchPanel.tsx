@@ -23,7 +23,7 @@ export default function FleetMatchPanel({ data, loading }: FleetMatchPanelProps)
 
   if (!data) {
     return (
-      <p className="text-sm text-gray-500 py-4 text-center">
+      <p className="text-sm text-slate-500 py-4 text-center">
         No fleet match data available.
       </p>
     )
@@ -31,60 +31,60 @@ export default function FleetMatchPanel({ data, loading }: FleetMatchPanelProps)
 
   if (data.no_asset_found) {
     return (
-      <div className="rounded-md bg-gray-800 border border-gray-700 px-4 py-3 text-sm text-gray-400">
-        <p className="font-semibold text-gray-300 mb-1">No Alternative Assets Available</p>
+      <div className="rounded-lg bg-slate-50 border border-slate-200 px-4 py-3 text-sm text-slate-600">
+        <p className="font-semibold text-slate-800 mb-1">No Alternative Assets Available</p>
         <p>No eligible fleet assets found for emergency reassignment to this shipment.</p>
       </div>
     )
   }
 
   return (
-    <div className="space-y-2">
+    <div className="space-y-2.5">
       {data.scored_assets.map((asset) => (
         <div
           key={asset.asset_id}
-          className={`rounded-lg border px-4 py-3 ${
+          className={`rounded-lg border px-4 py-3 shadow-sm ${
             asset.recommended
-              ? 'border-green-600 bg-green-900/20'
-              : 'border-gray-700 bg-gray-800/50'
+              ? 'border-emerald-300 bg-emerald-50/70'
+              : 'border-slate-200 bg-white'
           }`}
         >
           <div className="flex items-center justify-between gap-2 flex-wrap">
             <div>
-              <span className="font-mono text-sm font-bold text-white">{asset.asset_id}</span>
-              <span className="ml-2 text-xs text-gray-400">{asset.vehicle_type}</span>
+              <span className="font-mono text-sm font-bold text-slate-900">{asset.asset_id}</span>
+              <span className="ml-2 text-xs text-slate-500 font-medium">{asset.vehicle_type}</span>
             </div>
             <div className="flex items-center gap-2">
               {asset.recommended && (
-                <span className="rounded-full bg-green-700 px-2 py-0.5 text-xs font-bold text-white">
+                <span className="rounded-full bg-emerald-600 px-2.5 py-0.5 text-xs font-bold text-white shadow-xs">
                   ⭐ Top Match
                 </span>
               )}
-              <span className="text-sm font-bold tabular-nums text-blue-300">
+              <span className="text-sm font-extrabold tabular-nums text-blue-700">
                 {(asset.total_score * 100).toFixed(1)}%
               </span>
             </div>
           </div>
 
-          <div className="mt-2 flex flex-wrap gap-3 text-xs text-gray-400">
-            <span className="font-medium text-gray-300">
+          <div className="mt-2 flex flex-wrap gap-3 text-xs text-slate-500">
+            <span className="font-semibold text-slate-700">
               {COOLING_LABELS[asset.cooling_capability] ?? asset.cooling_capability}
             </span>
             <span>
               Proximity:{' '}
-              <strong className="text-gray-200">
+              <strong className="text-slate-800">
                 {asset.proximity_km !== null ? `${asset.proximity_km.toFixed(0)} km` : 'N/A'}
               </strong>
             </span>
             <span>
               Compat:{' '}
-              <strong className="text-gray-200">
+              <strong className="text-slate-800">
                 {(asset.cargo_compat_score * 100).toFixed(0)}%
               </strong>
             </span>
             <span>
               Refrig:{' '}
-              <strong className="text-gray-200">
+              <strong className="text-slate-800">
                 {(asset.refrigeration_score * 100).toFixed(0)}%
               </strong>
             </span>

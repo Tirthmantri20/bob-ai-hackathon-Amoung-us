@@ -3,9 +3,10 @@ Disruptions API router — /api/disruptions/*
 
 Endpoints
 ---------
-GET /api/disruptions                                 List all disruptions
-GET /api/disruptions/{disruption_id}                 Get one disruption
-GET /api/disruptions/{disruption_id}/affected-shipments
+GET  /api/disruptions                                 List all disruptions
+POST /api/disruptions                                 Create a new disruption
+GET  /api/disruptions/{disruption_id}                 Get one disruption
+GET  /api/disruptions/{disruption_id}/affected-shipments
     Compute which active shipments fall within the disruption's proximity radius.
 
 The affected-shipments endpoint re-uses the same DISRUPTION_RADIUS_KM constant
@@ -26,7 +27,7 @@ from src.backend.risk_engine.sub_scores import (
     DISRUPTION_RADIUS_KM,
     _DEFAULT_DISRUPTION_RADIUS_KM,
 )
-from src.backend.schemas.disruption import DisruptionResponse
+from src.backend.schemas.disruption import DisruptionCreate, DisruptionResponse
 from src.backend.schemas.engine_responses import (
     AffectedShipmentEntry,
     DisruptionImpactResponse,
@@ -58,6 +59,26 @@ def list_disruptions(db: Session = Depends(get_db)):
     """Return all disruptions from the database."""
     disruptions = db.query(Disruption).all()
     return [DisruptionResponse.model_validate(d) for d in disruptions]
+
+
+# ---------------------------------------------------------------------------
+# Create a new disruption
+# ---------------------------------------------------------------------------
+
+@router.post("/", response_model=DisruptionResponse, status_code=201)
+def create_disruption(payload: DisruptionCreate, db: Session = Depends(get_db)):
+    """Create a new disruption record.  Returns 409 if the ID already exists."""
+    existing = db.get(Disruption, payload.id)
+    if existing:
+        raise HTTPException(
+            status_code=409,
+            detail=f"Disruption {payload.id!r} already exists",
+        )
+    dis = Disruption(**payload.model_dump())
+    db.add(dis)
+    db.commit()
+    db.refresh(dis)
+    return DisruptionResponse.model_validate(dis)
 
 
 # ---------------------------------------------------------------------------

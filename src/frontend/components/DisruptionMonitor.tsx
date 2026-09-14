@@ -34,7 +34,7 @@ export default function DisruptionMonitor({
 }: DisruptionMonitorProps) {
   if (disruptions.length === 0) {
     return (
-      <p className="text-sm text-gray-500 py-4 text-center">
+      <p className="text-sm text-slate-500 py-4 text-center">
         No active disruptions.
       </p>
     )
@@ -58,8 +58,8 @@ export default function DisruptionMonitor({
               'w-full text-left rounded-lg border p-3 transition-all',
               'focus:outline-none focus:ring-2 focus:ring-blue-500',
               isSelected
-                ? 'border-blue-500 bg-blue-900/30'
-                : 'border-gray-700 bg-gray-800/50 hover:bg-gray-800',
+                ? 'border-blue-500 bg-blue-50/80 ring-2 ring-blue-400 shadow-sm'
+                : 'border-slate-200 bg-white hover:bg-slate-50 shadow-sm',
             ].join(' ')}
             aria-pressed={isSelected}
             aria-label={`Select disruption ${dis.id}`}
@@ -67,26 +67,26 @@ export default function DisruptionMonitor({
             <div className="flex items-start justify-between gap-2">
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <span className="font-mono text-xs font-semibold text-gray-400">{dis.id}</span>
+                  <span className="font-mono text-xs font-bold text-slate-700">{dis.id}</span>
                   <SeverityBadge severity={dis.severity} />
                 </div>
-                <p className="mt-1 text-sm font-semibold text-white truncate">
+                <p className="mt-1 text-sm font-semibold text-slate-900 truncate">
                   {dis.title}
                 </p>
-                <p className="text-xs text-gray-400">
+                <p className="text-xs text-slate-600">
                   {TYPE_LABELS[dis.type] ?? dis.type}
                 </p>
               </div>
             </div>
             {dis.affected_corridor && (
-              <p className="mt-1 text-xs text-gray-500">🛣 {dis.affected_corridor}</p>
+              <p className="mt-1 text-xs text-slate-500">🛣 {dis.affected_corridor}</p>
             )}
-            <div className="mt-1 flex flex-wrap gap-3 text-xs text-gray-500">
+            <div className="mt-1 flex flex-wrap gap-3 text-xs text-slate-500 font-medium">
               {dis.impact_delay_hours !== null && (
                 <span>⏱ +{dis.impact_delay_hours} hr delay</span>
               )}
               {dis.recommended_reroute && (
-                <span className="italic text-blue-400">↪ {dis.recommended_reroute}</span>
+                <span className="italic text-blue-600">↪ {dis.recommended_reroute}</span>
               )}
             </div>
           </button>

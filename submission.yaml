@@ -29,27 +29,28 @@ submission:
     Global supply chains and temperature-sensitive cold chains face multi-billion dollar losses due to reactive management during infrastructure disruptions and extreme weather. Logistics managers and dispatchers struggle with alert fatigue, blind disruption propagation, and lagging cold-chain visibility that alerts operators only after temperature thresholds have breached.
 
   solution_summary: >
-    SupplyGuard AI is an autonomous supply-chain risk mitigation control tower and cold-chain fleet utilization optimizer. Through Step 3, it delivers a high-performance FastAPI service featuring deterministic 5-factor risk scoring, regulatory cold-chain excursion detection, multi-criteria route optimization, and emergency idle reefer asset matching.
+    SupplyGuard AI is a full-stack autonomous supply-chain disruption assistant and cold-chain fleet utilization optimizer. It delivers a deterministic multi-factor risk engine (0-100 score across 5 sub-scores), regulatory cold-chain excursion detection, multi-criteria route and fleet optimization, and an IBM Granite-powered AI explanation layer via watsonx.ai with deterministic fallback when credentials are absent. Ten MCP tools registered on an IBM Bob-compatible server enable natural-language supply-chain queries and AI-synthesized incident briefs. A Next.js 14 plus TypeScript plus Tailwind control tower with an interactive Leaflet/OpenStreetMap map provides real-time operational visibility. The complete system is validated by 237 Python tests and 89 frontend tests.
 
   key_features:
-    - "Multi-factor real-time shipment risk scoring (0-100) across disruptions, weather, route, cold-chain, and business impact"
-    - "Automated cold-chain excursion detection and severity classification against regulatory cargo rules"
-    - "Multi-criteria candidate route optimization evaluating ETA, cost, disruption avoidance, and weather exposure"
-    - "Proactive emergency idle fleet asset matcher for reefer transfer and distress mitigation"
-    - "Comprehensive FastAPI REST API with automated SQLite database lifecycle and idempotent seed data loading"
+    - "Multi-factor deterministic shipment risk scoring (0-100) across disruption proximity, weather conditions, route exposure, cold-chain status, and business impact"
+    - "Automated cold-chain excursion detection comparing live telemetry against regulatory cargo rules (WHO-grade cold chain, perishable frozen, ultra-cold cryo)"
+    - "Multi-criteria route and fleet optimization using min-max normalization across ETA, cost, disruption avoidance, weather risk, and cargo compatibility"
+    - "IBM Granite AI-powered operational explanations via watsonx.ai with graceful deterministic fallback — all endpoints return HTTP 200 regardless of credential availability"
+    - "Ten MCP tools on an IBM Bob-compatible stdio server enabling natural-language supply-chain queries, risk evaluation, cold-chain status, and AI-synthesized incident briefs"
+    - "Next.js 14 plus TypeScript plus Tailwind control tower with Leaflet/OpenStreetMap map, risk gauges, sub-score bars, cold-chain panels, and AI brief panels"
 
   tech_stack:
-    languages: ["Python"]
-    frameworks: ["FastAPI", "SQLAlchemy", "Pydantic"]
-    ibm_technologies: ["watsonx.ai", "IBM Bob"]
+    languages: ["Python", "TypeScript"]
+    frameworks: ["FastAPI", "SQLAlchemy", "Pydantic v2", "Next.js 14", "React 18", "Tailwind CSS"]
+    ibm_technologies: ["watsonx.ai", "IBM Granite 3.0", "IBM Bob", "Model Context Protocol (MCP)"]
     databases: ["SQLite"]
-    other: ["Uvicorn", "pytest"]
+    other: ["Leaflet", "OpenStreetMap", "ibm-watsonx-ai SDK", "MCP SDK", "httpx", "Uvicorn", "pytest", "Jest", "React Testing Library"]
 
   what_we_are_most_proud_of: >
-    Our robust mathematical modeling and pure deterministic intelligence engines (risk scoring, cold-chain excursion detection, and multi-criteria routing/fleet matching) engineered with clean domain boundaries, complete Pydantic v2 schemas, and 143 passing unit and integration tests.
+    The clean architectural boundary between deterministic intelligence engines and the AI annotation layer — every risk score, cold-chain excursion, route ranking, and fleet match is computed mathematically before IBM Granite synthesizes the explanation. This guarantees auditable, hallucination-free operations. The system is validated by 237 Python tests and 89 frontend tests with zero failures. The watsonx.ai fallback design ensures the control tower remains fully operational even without live IBM credentials, and the 10 MCP tools make every engine capability accessible to IBM Bob through natural language.
 
   known_limitations: >
-    Completed through Step 3 (Core Data Foundation, Intelligence Engines, and REST API routes). watsonx.ai natural language incident explanation generation, Model Context Protocol (MCP) agent tool registration, and the frontend web dashboard are planned in subsequent steps.
+    Route matching uses exact string equality on origin and destination; none of the three prototype shipment origins match the two seeded fixture route origins, so the route optimizer returns no_route_found for all prototype shipments (documented prototype assumption MD-05). Fleet asset GPS coordinates are not seeded; telemetry GPS is used as a positional proxy. All three prototype fleet assets have status ACTIVE rather than idle, so the fleet matcher scores them by compatibility heuristics only. Disruption proximity uses Haversine radius from a single point coordinate; polygon-based geofencing via PostGIS is a documented future roadmap item. Live watsonx.ai inference requires valid IBM Cloud credentials; without them the system returns a deterministic text explanation with ai_generated set to false. The database is SQLite; PostgreSQL plus PostGIS is a documented production roadmap item. No authentication layer is present; API endpoints are open for local and hackathon evaluation.
 
 # =============================================================================
 # ARTIFACT LOCATIONS

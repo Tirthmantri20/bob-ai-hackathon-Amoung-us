@@ -1,40 +1,415 @@
 [
   {
-    "route_id": "RT-CHI-ATL-01",
-    "name": "Chicago to Atlanta Primary Interstate Corridor",
-    "origin": "Chicago, IL",
-    "destination": "Atlanta, GA",
-    "distance_km": 1150.0,
-    "typical_duration_hours": 11.5,
-    "highways": ["I-65 S", "I-24 E", "I-75 S"],
+    "route_id": "RT-NYC-BOS-01",
+    "name": "New York to Boston Northeast Corridor",
+    "origin": "New York, NY",
+    "destination": "Boston, MA",
+    "distance_km": 350.0,
+    "typical_duration_hours": 4.0,
+    "highways": [
+      "I-95 N",
+      "I-278 E",
+      "I-90 E"
+    ],
     "waypoints": [
-      {"name": "Indianapolis, IN", "lat": 39.7684, "lon": -86.1581},
-      {"name": "Louisville, KY", "lat": 38.2527, "lon": -85.7585},
-      {"name": "Nashville, TN", "lat": 36.1627, "lon": -86.7816},
-      {"name": "Chattanooga, TN", "lat": 35.0456, "lon": -85.3097}
+      {
+        "name": "New Haven, CT",
+        "lat": 41.3083,
+        "lon": -72.9279
+      },
+      {
+        "name": "Hartford, CT",
+        "lat": 41.7658,
+        "lon": -72.6734
+      },
+      {
+        "name": "Providence, RI",
+        "lat": 41.8240,
+        "lon": -71.4128
+      }
     ],
     "cold_storage_depots": [
-      {"name": "Midwest Cold Vault - Indianapolis", "lat": 39.7501, "lon": -86.1302},
-      {"name": "Dixie Freezer Hub - Nashville", "lat": 36.1402, "lon": -86.7501}
+      {
+        "name": "Northeast Cold Hub - New Haven",
+        "lat": 41.3200,
+        "lon": -72.9200
+      },
+      {
+        "name": "Atlantic Frozen Depot - Providence",
+        "lat": 41.8100,
+        "lon": -71.4000
+      }
     ]
   },
   {
-    "route_id": "RT-SEA-DEN-01",
-    "name": "Seattle to Denver Trans-Mountain Corridor",
-    "origin": "Seattle, WA",
-    "destination": "Denver, CO",
-    "distance_km": 2100.0,
-    "typical_duration_hours": 20.0,
-    "highways": ["I-90 E", "I-82 E", "I-84 E", "I-80 E", "I-25 S"],
+    "route_id": "RT-LAX-PHX-01",
+    "name": "Los Angeles to Phoenix Desert Freight Corridor",
+    "origin": "Los Angeles, CA",
+    "destination": "Phoenix, AZ",
+    "distance_km": 600.0,
+    "typical_duration_hours": 6.0,
+    "highways": [
+      "I-10 E"
+    ],
     "waypoints": [
-      {"name": "Ellensburg, WA", "lat": 46.9965, "lon": -120.5478},
-      {"name": "Boise, ID", "lat": 43.6150, "lon": -116.2023},
-      {"name": "Salt Lake City, UT", "lat": 40.7608, "lon": -111.8910},
-      {"name": "Cheyenne, WY", "lat": 41.1400, "lon": -104.8202}
+      {
+        "name": "San Bernardino, CA",
+        "lat": 34.1083,
+        "lon": -117.2898
+      },
+      {
+        "name": "Palm Springs, CA",
+        "lat": 33.8303,
+        "lon": -116.5453
+      },
+      {
+        "name": "Yuma, AZ",
+        "lat": 32.6927,
+        "lon": -114.6277
+      }
     ],
     "cold_storage_depots": [
-      {"name": "Intermountain Frozen Logistics - Boise", "lat": 43.6010, "lon": -116.2100},
-      {"name": "Rocky Mountain Cold Chain - Salt Lake City", "lat": 40.7500, "lon": -111.8700}
+      {
+        "name": "Inland Empire Cold Storage",
+        "lat": 34.1000,
+        "lon": -117.2700
+      },
+      {
+        "name": "Desert Fresh Logistics - Yuma",
+        "lat": 32.7000,
+        "lon": -114.6100
+      }
+    ]
+  },
+  {
+    "route_id": "RT-DAL-HOU-01",
+    "name": "Dallas to Houston Gulf Freight Corridor",
+    "origin": "Dallas, TX",
+    "destination": "Houston, TX",
+    "distance_km": 385.0,
+    "typical_duration_hours": 4.0,
+    "highways": [
+      "I-45 S"
+    ],
+    "waypoints": [
+      {
+        "name": "Corsicana, TX",
+        "lat": 32.0954,
+        "lon": -96.4689
+      },
+      {
+        "name": "Madisonville, TX",
+        "lat": 30.9499,
+        "lon": -95.9116
+      },
+      {
+        "name": "The Woodlands, TX",
+        "lat": 30.1658,
+        "lon": -95.4613
+      }
+    ],
+    "cold_storage_depots": [
+      {
+        "name": "North Texas Cold Vault",
+        "lat": 32.0800,
+        "lon": -96.4500
+      },
+      {
+        "name": "Gulf Coast Refrigerated Hub",
+        "lat": 30.1600,
+        "lon": -95.4500
+      }
+    ]
+  },
+  {
+    "route_id": "RT-SF-SEA-01",
+    "name": "San Francisco to Seattle Pacific Coast Corridor",
+    "origin": "San Francisco, CA",
+    "destination": "Seattle, WA",
+    "distance_km": 1300.0,
+    "typical_duration_hours": 13.0,
+    "highways": [
+      "US-101 N",
+      "I-5 N"
+    ],
+    "waypoints": [
+      {
+        "name": "Redding, CA",
+        "lat": 40.5865,
+        "lon": -122.3917
+      },
+      {
+        "name": "Eugene, OR",
+        "lat": 44.0521,
+        "lon": -123.0868
+      },
+      {
+        "name": "Portland, OR",
+        "lat": 45.5152,
+        "lon": -122.6784
+      }
+    ],
+    "cold_storage_depots": [
+      {
+        "name": "Northern California Cold Hub",
+        "lat": 40.5800,
+        "lon": -122.3800
+      },
+      {
+        "name": "Cascade Refrigerated Depot - Portland",
+        "lat": 45.5100,
+        "lon": -122.6600
+      }
+    ]
+  },
+  {
+    "route_id": "RT-MIA-ATL-01",
+    "name": "Miami to Atlanta Southeast Cold Chain Route",
+    "origin": "Miami, FL",
+    "destination": "Atlanta, GA",
+    "distance_km": 1070.0,
+    "typical_duration_hours": 10.5,
+    "highways": [
+      "I-95 N",
+      "I-16 W",
+      "I-75 N"
+    ],
+    "waypoints": [
+      {
+        "name": "West Palm Beach, FL",
+        "lat": 26.7153,
+        "lon": -80.0534
+      },
+      {
+        "name": "Jacksonville, FL",
+        "lat": 30.3322,
+        "lon": -81.6557
+      },
+      {
+        "name": "Savannah, GA",
+        "lat": 32.0809,
+        "lon": -81.0912
+      },
+      {
+        "name": "Macon, GA",
+        "lat": 32.8407,
+        "lon": -83.6324
+      }
+    ],
+    "cold_storage_depots": [
+      {
+        "name": "Florida Cold Distribution Hub",
+        "lat": 30.3200,
+        "lon": -81.6400
+      },
+      {
+        "name": "Georgia Fresh Logistics - Macon",
+        "lat": 32.8300,
+        "lon": -83.6200
+      }
+    ]
+  },
+  {
+    "route_id": "RT-ATL-CLT-01",
+    "name": "Atlanta to Charlotte Southeast Interstate Corridor",
+    "origin": "Atlanta, GA",
+    "destination": "Charlotte, NC",
+    "distance_km": 395.0,
+    "typical_duration_hours": 4.0,
+    "highways": [
+      "I-85 N"
+    ],
+    "waypoints": [
+      {
+        "name": "Greenville, SC",
+        "lat": 34.8526,
+        "lon": -82.3940
+      },
+      {
+        "name": "Spartanburg, SC",
+        "lat": 34.9496,
+        "lon": -81.9320
+      },
+      {
+        "name": "Gastonia, NC",
+        "lat": 35.2621,
+        "lon": -81.1873
+      }
+    ],
+    "cold_storage_depots": [
+      {
+        "name": "Upstate Cold Chain Hub",
+        "lat": 34.8600,
+        "lon": -82.3800
+      },
+      {
+        "name": "Carolinas Frozen Logistics",
+        "lat": 35.2500,
+        "lon": -81.1800
+      }
+    ]
+  },
+  {
+    "route_id": "RT-DEN-SLC-01",
+    "name": "Denver to Salt Lake Mountain Corridor",
+    "origin": "Denver, CO",
+    "destination": "Salt Lake City, UT",
+    "distance_km": 840.0,
+    "typical_duration_hours": 8.5,
+    "highways": [
+      "I-70 W",
+      "I-15 N"
+    ],
+    "waypoints": [
+      {
+        "name": "Grand Junction, CO",
+        "lat": 39.0639,
+        "lon": -108.5506
+      },
+      {
+        "name": "Green River, UT",
+        "lat": 38.9950,
+        "lon": -110.1590
+      },
+      {
+        "name": "Provo, UT",
+        "lat": 40.2338,
+        "lon": -111.6585
+      }
+    ],
+    "cold_storage_depots": [
+      {
+        "name": "Western Colorado Cold Depot",
+        "lat": 39.0500,
+        "lon": -108.5400
+      },
+      {
+        "name": "Utah Mountain Cold Hub",
+        "lat": 40.2200,
+        "lon": -111.6500
+      }
+    ]
+  },
+  {
+    "route_id": "RT-CHI-DET-01",
+    "name": "Chicago to Detroit Great Lakes Corridor",
+    "origin": "Chicago, IL",
+    "destination": "Detroit, MI",
+    "distance_km": 455.0,
+    "typical_duration_hours": 4.5,
+    "highways": [
+      "I-90 E",
+      "I-94 E"
+    ],
+    "waypoints": [
+      {
+        "name": "Gary, IN",
+        "lat": 41.5934,
+        "lon": -87.3464
+      },
+      {
+        "name": "South Bend, IN",
+        "lat": 41.6764,
+        "lon": -86.2520
+      },
+      {
+        "name": "Kalamazoo, MI",
+        "lat": 42.2917,
+        "lon": -85.5872
+      }
+    ],
+    "cold_storage_depots": [
+      {
+        "name": "Lake Michigan Cold Hub - Gary",
+        "lat": 41.5900,
+        "lon": -87.3300
+      },
+      {
+        "name": "Michigan Refrigerated Depot",
+        "lat": 42.2800,
+        "lon": -85.5700
+      }
+    ]
+  },
+  {
+    "route_id": "RT-PHX-LAS-01",
+    "name": "Phoenix to Las Vegas Southwest Corridor",
+    "origin": "Phoenix, AZ",
+    "destination": "Las Vegas, NV",
+    "distance_km": 480.0,
+    "typical_duration_hours": 4.5,
+    "highways": [
+      "US-93 N",
+      "I-11 N"
+    ],
+    "waypoints": [
+      {
+        "name": "Wickenburg, AZ",
+        "lat": 33.9686,
+        "lon": -112.7296
+      },
+      {
+        "name": "Kingman, AZ",
+        "lat": 35.1894,
+        "lon": -114.0530
+      },
+      {
+        "name": "Boulder City, NV",
+        "lat": 35.9786,
+        "lon": -114.8325
+      }
+    ],
+    "cold_storage_depots": [
+      {
+        "name": "Arizona Desert Cold Hub",
+        "lat": 33.9600,
+        "lon": -112.7100
+      },
+      {
+        "name": "Nevada Frozen Distribution Center",
+        "lat": 35.9700,
+        "lon": -114.8200
+      }
+    ]
+  },
+  {
+    "route_id": "RT-SEA-PDX-01",
+    "name": "Seattle to Portland Pacific Northwest Corridor",
+    "origin": "Seattle, WA",
+    "destination": "Portland, OR",
+    "distance_km": 280.0,
+    "typical_duration_hours": 3.0,
+    "highways": [
+      "I-5 S"
+    ],
+    "waypoints": [
+      {
+        "name": "Tacoma, WA",
+        "lat": 47.2529,
+        "lon": -122.4443
+      },
+      {
+        "name": "Olympia, WA",
+        "lat": 47.0379,
+        "lon": -122.9007
+      },
+      {
+        "name": "Longview, WA",
+        "lat": 46.1382,
+        "lon": -122.9382
+      }
+    ],
+    "cold_storage_depots": [
+      {
+        "name": "Puget Sound Cold Storage",
+        "lat": 47.2400,
+        "lon": -122.4300
+      },
+      {
+        "name": "Columbia River Cold Hub",
+        "lat": 46.1300,
+        "lon": -122.9200
+      }
     ]
   }
 ]

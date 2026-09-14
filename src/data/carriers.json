@@ -7,7 +7,11 @@
     "compliance_rating": 0.98,
     "on_time_delivery_rate": 0.96,
     "active_fleet_size": 150,
-    "certifications": ["GDP (Good Distribution Practice)", "ISO 9001", "SmartWay Partner"]
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "ISO 9001",
+      "SmartWay Partner"
+    ]
   },
   {
     "carrier_id": "CRR-402",
@@ -17,7 +21,10 @@
     "compliance_rating": 0.91,
     "on_time_delivery_rate": 0.89,
     "active_fleet_size": 220,
-    "certifications": ["DOT Certified", "SmartWay Partner"]
+    "certifications": [
+      "DOT Certified",
+      "SmartWay Partner"
+    ]
   },
   {
     "carrier_id": "CRR-403",
@@ -27,6 +34,620 @@
     "compliance_rating": 0.84,
     "on_time_delivery_rate": 0.82,
     "active_fleet_size": 75,
-    "certifications": ["HACCP Compliant"]
+    "certifications": [
+      "HACCP Compliant"
+    ]
+  },
+  {
+    "carrier_id": "CRR-404",
+    "name": "PolarRoute Express",
+    "contact_email": "ops@polarroute.com",
+    "phone": "+1-800-555-0201",
+    "compliance_rating": 0.95,
+    "on_time_delivery_rate": 0.94,
+    "active_fleet_size": 180,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "ISO 9001"
+    ]
+  },
+  {
+    "carrier_id": "CRR-405",
+    "name": "NorthStar Cold Freight",
+    "contact_email": "dispatch@northstarcold.com",
+    "phone": "+1-800-555-0202",
+    "compliance_rating": 0.93,
+    "on_time_delivery_rate": 0.91,
+    "active_fleet_size": 135,
+    "certifications": [
+      "HACCP Compliant",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-406",
+    "name": "BluePeak Transport",
+    "contact_email": "support@bluepeaktransport.com",
+    "phone": "+1-800-555-0203",
+    "compliance_rating": 0.88,
+    "on_time_delivery_rate": 0.86,
+    "active_fleet_size": 95,
+    "certifications": [
+      "DOT Certified",
+      "ISO 9001"
+    ]
+  },
+  {
+    "carrier_id": "CRR-407",
+    "name": "ArcticWay Logistics",
+    "contact_email": "ops@arcticway.com",
+    "phone": "+1-800-555-0204",
+    "compliance_rating": 0.97,
+    "on_time_delivery_rate": 0.95,
+    "active_fleet_size": 165,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "ISO 9001",
+      "HACCP Compliant"
+    ]
+  },
+  {
+    "carrier_id": "CRR-408",
+    "name": "EverChill Freight Services",
+    "contact_email": "dispatch@everchill.com",
+    "phone": "+1-800-555-0205",
+    "compliance_rating": 0.90,
+    "on_time_delivery_rate": 0.88,
+    "active_fleet_size": 120,
+    "certifications": [
+      "HACCP Compliant",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-409",
+    "name": "Summit Cargo Lines",
+    "contact_email": "ops@summitcargo.com",
+    "phone": "+1-800-555-0206",
+    "compliance_rating": 0.86,
+    "on_time_delivery_rate": 0.84,
+    "active_fleet_size": 210,
+    "certifications": [
+      "DOT Certified"
+    ]
+  },
+  {
+    "carrier_id": "CRR-410",
+    "name": "GlacierHaul Logistics",
+    "contact_email": "support@glacierhaul.com",
+    "phone": "+1-800-555-0207",
+    "compliance_rating": 0.96,
+    "on_time_delivery_rate": 0.93,
+    "active_fleet_size": 145,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-411",
+    "name": "RapidFreeze Transport",
+    "contact_email": "dispatch@rapidfreeze.com",
+    "phone": "+1-800-555-0208",
+    "compliance_rating": 0.89,
+    "on_time_delivery_rate": 0.87,
+    "active_fleet_size": 110,
+    "certifications": [
+      "HACCP Compliant",
+      "DOT Certified"
+    ]
+  },
+  {
+    "carrier_id": "CRR-412",
+    "name": "ColdBridge Carriers",
+    "contact_email": "ops@coldbridge.com",
+    "phone": "+1-800-555-0209",
+    "compliance_rating": 0.92,
+    "on_time_delivery_rate": 0.90,
+    "active_fleet_size": 175,
+    "certifications": [
+      "ISO 9001",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-413",
+    "name": "IceTrack Logistics",
+    "contact_email": "support@icetrack.com",
+    "phone": "+1-800-555-0210",
+    "compliance_rating": 0.94,
+    "on_time_delivery_rate": 0.92,
+    "active_fleet_size": 155,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "HACCP Compliant"
+    ]
+  },
+  {
+    "carrier_id": "CRR-414",
+    "name": "MetroCold Transport",
+    "contact_email": "ops@metrocold.com",
+    "phone": "+1-800-555-0211",
+    "compliance_rating": 0.87,
+    "on_time_delivery_rate": 0.85,
+    "active_fleet_size": 130,
+    "certifications": [
+      "DOT Certified",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-415",
+    "name": "FrostPeak Carriers",
+    "contact_email": "dispatch@frostpeak.com",
+    "phone": "+1-800-555-0212",
+    "compliance_rating": 0.99,
+    "on_time_delivery_rate": 0.97,
+    "active_fleet_size": 190,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "ISO 9001",
+      "HACCP Compliant"
+    ]
+  },
+  {
+    "carrier_id": "CRR-416",
+    "name": "ChillCore Logistics",
+    "contact_email": "support@chillcore.com",
+    "phone": "+1-800-555-0213",
+    "compliance_rating": 0.85,
+    "on_time_delivery_rate": 0.83,
+    "active_fleet_size": 85,
+    "certifications": [
+      "HACCP Compliant"
+    ]
+  },
+  {
+    "carrier_id": "CRR-417",
+    "name": "WinterGate Freight",
+    "contact_email": "ops@wintergate.com",
+    "phone": "+1-800-555-0214",
+    "compliance_rating": 0.91,
+    "on_time_delivery_rate": 0.90,
+    "active_fleet_size": 200,
+    "certifications": [
+      "ISO 9001",
+      "DOT Certified"
+    ]
+  },
+  {
+    "carrier_id": "CRR-418",
+    "name": "ColdStream Express",
+    "contact_email": "dispatch@coldstream.com",
+    "phone": "+1-800-555-0215",
+    "compliance_rating": 0.93,
+    "on_time_delivery_rate": 0.91,
+    "active_fleet_size": 140,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-419",
+    "name": "PolarFleet Transport",
+    "contact_email": "support@polarfleet.com",
+    "phone": "+1-800-555-0216",
+    "compliance_rating": 0.88,
+    "on_time_delivery_rate": 0.86,
+    "active_fleet_size": 100,
+    "certifications": [
+      "DOT Certified",
+      "HACCP Compliant"
+    ]
+  },
+  {
+    "carrier_id": "CRR-420",
+    "name": "FrostGuard Shipping",
+    "contact_email": "ops@frostguard.com",
+    "phone": "+1-800-555-0217",
+    "compliance_rating": 0.96,
+    "on_time_delivery_rate": 0.94,
+    "active_fleet_size": 160,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "ISO 9001"
+    ]
+  },
+  {
+    "carrier_id": "CRR-421",
+    "name": "BlueIce Cargo",
+    "contact_email": "dispatch@blueicecargo.com",
+    "phone": "+1-800-555-0218",
+    "compliance_rating": 0.83,
+    "on_time_delivery_rate": 0.81,
+    "active_fleet_size": 70,
+    "certifications": [
+      "HACCP Compliant"
+    ]
+  },
+  {
+    "carrier_id": "CRR-422",
+    "name": "Northern Transit Group",
+    "contact_email": "ops@northerntransit.com",
+    "phone": "+1-800-555-0219",
+    "compliance_rating": 0.90,
+    "on_time_delivery_rate": 0.88,
+    "active_fleet_size": 230,
+    "certifications": [
+      "DOT Certified",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-423",
+    "name": "GlacierPath Logistics",
+    "contact_email": "support@glacierpath.com",
+    "phone": "+1-800-555-0220",
+    "compliance_rating": 0.95,
+    "on_time_delivery_rate": 0.93,
+    "active_fleet_size": 125,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "HACCP Compliant"
+    ]
+  },
+  {
+    "carrier_id": "CRR-424",
+    "name": "CoolWay Transport",
+    "contact_email": "dispatch@coolwaytransport.com",
+    "phone": "+1-800-555-0221",
+    "compliance_rating": 0.87,
+    "on_time_delivery_rate": 0.85,
+    "active_fleet_size": 115,
+    "certifications": [
+      "ISO 9001"
+    ]
+  },
+  {
+    "carrier_id": "CRR-425",
+    "name": "FrostBridge Freight",
+    "contact_email": "ops@frostbridge.com",
+    "phone": "+1-800-555-0222",
+    "compliance_rating": 0.92,
+    "on_time_delivery_rate": 0.89,
+    "active_fleet_size": 185,
+    "certifications": [
+      "DOT Certified",
+      "SmartWay Partner",
+      "ISO 9001"
+    ]
+  },
+  {
+    "carrier_id": "CRR-426",
+    "name": "ArcticLink Cargo",
+    "contact_email": "support@arcticlink.com",
+    "phone": "+1-800-555-0223",
+    "compliance_rating": 0.98,
+    "on_time_delivery_rate": 0.96,
+    "active_fleet_size": 205,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "ISO 9001",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-427",
+    "name": "EverFrost Transport",
+    "contact_email": "ops@everfrost.com",
+    "phone": "+1-800-555-0224",
+    "compliance_rating": 0.84,
+    "on_time_delivery_rate": 0.80,
+    "active_fleet_size": 90,
+    "certifications": [
+      "HACCP Compliant"
+    ]
+  },
+  {
+    "carrier_id": "CRR-428",
+    "name": "ChillPoint Logistics",
+    "contact_email": "dispatch@chillpoint.com",
+    "phone": "+1-800-555-0225",
+    "compliance_rating": 0.89,
+    "on_time_delivery_rate": 0.87,
+    "active_fleet_size": 150,
+    "certifications": [
+      "DOT Certified",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-429",
+    "name": "PolarCrest Freight",
+    "contact_email": "support@polarcrest.com",
+    "phone": "+1-800-555-0226",
+    "compliance_rating": 0.94,
+    "on_time_delivery_rate": 0.92,
+    "active_fleet_size": 170,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "ISO 9001"
+    ]
+  },
+  {
+    "carrier_id": "CRR-430",
+    "name": "ColdHarbor Shipping",
+    "contact_email": "ops@coldharbor.com",
+    "phone": "+1-800-555-0227",
+    "compliance_rating": 0.86,
+    "on_time_delivery_rate": 0.84,
+    "active_fleet_size": 105,
+    "certifications": [
+      "HACCP Compliant",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-431",
+    "name": "IceRoute Carriers",
+    "contact_email": "dispatch@iceroute.com",
+    "phone": "+1-800-555-0228",
+    "compliance_rating": 0.91,
+    "on_time_delivery_rate": 0.90,
+    "active_fleet_size": 145,
+    "certifications": [
+      "ISO 9001",
+      "DOT Certified"
+    ]
+  },
+  {
+    "carrier_id": "CRR-432",
+    "name": "FrostWave Logistics",
+    "contact_email": "support@frostwave.com",
+    "phone": "+1-800-555-0229",
+    "compliance_rating": 0.97,
+    "on_time_delivery_rate": 0.95,
+    "active_fleet_size": 215,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "HACCP Compliant",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-433",
+    "name": "SnowPeak Transport",
+    "contact_email": "ops@snowpeaktransport.com",
+    "phone": "+1-800-555-0230",
+    "compliance_rating": 0.82,
+    "on_time_delivery_rate": 0.79,
+    "active_fleet_size": 65,
+    "certifications": [
+      "DOT Certified"
+    ]
+  },
+  {
+    "carrier_id": "CRR-434",
+    "name": "ColdAxis Freight",
+    "contact_email": "dispatch@coldaxis.com",
+    "phone": "+1-800-555-0231",
+    "compliance_rating": 0.93,
+    "on_time_delivery_rate": 0.91,
+    "active_fleet_size": 155,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "ISO 9001"
+    ]
+  },
+  {
+    "carrier_id": "CRR-435",
+    "name": "GlacierLine Express",
+    "contact_email": "support@glacierline.com",
+    "phone": "+1-800-555-0232",
+    "compliance_rating": 0.88,
+    "on_time_delivery_rate": 0.86,
+    "active_fleet_size": 120,
+    "certifications": [
+      "HACCP Compliant",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-436",
+    "name": "ArcticStar Logistics",
+    "contact_email": "ops@arcticstar.com",
+    "phone": "+1-800-555-0233",
+    "compliance_rating": 0.96,
+    "on_time_delivery_rate": 0.94,
+    "active_fleet_size": 195,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "ISO 9001",
+      "DOT Certified"
+    ]
+  },
+  {
+    "carrier_id": "CRR-437",
+    "name": "FrozenPeak Cargo",
+    "contact_email": "dispatch@frozenpeak.com",
+    "phone": "+1-800-555-0234",
+    "compliance_rating": 0.85,
+    "on_time_delivery_rate": 0.82,
+    "active_fleet_size": 80,
+    "certifications": [
+      "HACCP Compliant"
+    ]
+  },
+  {
+    "carrier_id": "CRR-438",
+    "name": "BlueFrost Logistics",
+    "contact_email": "support@bluefrost.com",
+    "phone": "+1-800-555-0235",
+    "compliance_rating": 0.90,
+    "on_time_delivery_rate": 0.88,
+    "active_fleet_size": 135,
+    "certifications": [
+      "ISO 9001",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-439",
+    "name": "WinterRoute Freight",
+    "contact_email": "ops@winterroute.com",
+    "phone": "+1-800-555-0236",
+    "compliance_rating": 0.92,
+    "on_time_delivery_rate": 0.90,
+    "active_fleet_size": 175,
+    "certifications": [
+      "DOT Certified",
+      "HACCP Compliant"
+    ]
+  },
+  {
+    "carrier_id": "CRR-440",
+    "name": "PolarGate Transport",
+    "contact_email": "dispatch@polargate.com",
+    "phone": "+1-800-555-0237",
+    "compliance_rating": 0.98,
+    "on_time_delivery_rate": 0.97,
+    "active_fleet_size": 240,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "ISO 9001",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-441",
+    "name": "CoolBridge Logistics",
+    "contact_email": "support@coolbridge.com",
+    "phone": "+1-800-555-0238",
+    "compliance_rating": 0.87,
+    "on_time_delivery_rate": 0.85,
+    "active_fleet_size": 100,
+    "certifications": [
+      "HACCP Compliant",
+      "ISO 9001"
+    ]
+  },
+  {
+    "carrier_id": "CRR-442",
+    "name": "FrostTrail Carriers",
+    "contact_email": "ops@frosttrail.com",
+    "phone": "+1-800-555-0239",
+    "compliance_rating": 0.94,
+    "on_time_delivery_rate": 0.92,
+    "active_fleet_size": 160,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-443",
+    "name": "NorthernEdge Freight",
+    "contact_email": "dispatch@northernedge.com",
+    "phone": "+1-800-555-0240",
+    "compliance_rating": 0.83,
+    "on_time_delivery_rate": 0.81,
+    "active_fleet_size": 75,
+    "certifications": [
+      "DOT Certified"
+    ]
+  },
+  {
+    "carrier_id": "CRR-444",
+    "name": "IcePeak Transporters",
+    "contact_email": "support@icepeak.com",
+    "phone": "+1-800-555-0241",
+    "compliance_rating": 0.91,
+    "on_time_delivery_rate": 0.89,
+    "active_fleet_size": 125,
+    "certifications": [
+      "ISO 9001",
+      "HACCP Compliant"
+    ]
+  },
+  {
+    "carrier_id": "CRR-445",
+    "name": "GlacierCore Logistics",
+    "contact_email": "ops@glaciercore.com",
+    "phone": "+1-800-555-0242",
+    "compliance_rating": 0.97,
+    "on_time_delivery_rate": 0.95,
+    "active_fleet_size": 185,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "ISO 9001",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-446",
+    "name": "ChillMax Freight",
+    "contact_email": "dispatch@chillmax.com",
+    "phone": "+1-800-555-0243",
+    "compliance_rating": 0.86,
+    "on_time_delivery_rate": 0.83,
+    "active_fleet_size": 90,
+    "certifications": [
+      "HACCP Compliant",
+      "DOT Certified"
+    ]
+  },
+  {
+    "carrier_id": "CRR-447",
+    "name": "ArcticFlow Shipping",
+    "contact_email": "support@arcticflow.com",
+    "phone": "+1-800-555-0244",
+    "compliance_rating": 0.95,
+    "on_time_delivery_rate": 0.93,
+    "active_fleet_size": 150,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-448",
+    "name": "FrostLine Express",
+    "contact_email": "ops@frostlineexpress.com",
+    "phone": "+1-800-555-0245",
+    "compliance_rating": 0.89,
+    "on_time_delivery_rate": 0.87,
+    "active_fleet_size": 115,
+    "certifications": [
+      "ISO 9001",
+      "DOT Certified"
+    ]
+  },
+  {
+    "carrier_id": "CRR-449",
+    "name": "ColdPeak Carriers",
+    "contact_email": "dispatch@coldpeak.com",
+    "phone": "+1-800-555-0246",
+    "compliance_rating": 0.93,
+    "on_time_delivery_rate": 0.91,
+    "active_fleet_size": 175,
+    "certifications": [
+      "HACCP Compliant",
+      "SmartWay Partner"
+    ]
+  },
+  {
+    "carrier_id": "CRR-450",
+    "name": "PolarStream Logistics",
+    "contact_email": "support@polarstream.com",
+    "phone": "+1-800-555-0247",
+    "compliance_rating": 0.96,
+    "on_time_delivery_rate": 0.94,
+    "active_fleet_size": 220,
+    "certifications": [
+      "GDP (Good Distribution Practice)",
+      "ISO 9001",
+      "SmartWay Partner"
+    ]
   }
 ]

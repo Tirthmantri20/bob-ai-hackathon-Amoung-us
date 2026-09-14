@@ -7,7 +7,7 @@ SupplyGuard AI is structured as a decoupled, service-oriented architecture desig
 ```mermaid
 flowchart TD
     subgraph ClientLayer [Client & Interaction Layer]
-        FE[Next.js Control Tower<br/>React + Tailwind + MapLibre]
+        FE[Next.js Control Tower<br/>React + Tailwind + Leaflet/OpenStreetMap]
         BOB[IBM Bob CLI / Agent<br/>Conversational Co-Pilot]
     end
 
@@ -25,7 +25,7 @@ flowchart TD
     end
 
     subgraph DataPersistence [Data & Knowledge Persistence Layer]
-        DB[(PostgreSQL + PostGIS<br/>Geospatial Corridors & Shipments)]
+        DB[(SQLite + SQLAlchemy<br/>Geospatial Corridors & Shipments)]
         FIXTURES[(Seed Data Fixtures<br/>Shipments, Fleet, Telemetry, Rules)]
     end
 
@@ -53,14 +53,14 @@ flowchart TD
 
 | Component | Technology | Responsibility |
 |---|---|---|
-| **Next.js Control Tower** | Next.js 14, React, Tailwind CSS, MapLibre GL / Leaflet, Recharts | Interactive operations console rendering multi-layer thermal heat maps, live shipment statuses, fleet allocation boards, and AI chat panels. |
+| **Next.js Control Tower** | Next.js 14, React, Tailwind CSS, Leaflet, react-leaflet, OpenStreetMap tiles | Interactive operations console rendering shipment roster, risk gauges, cold-chain panels, disruption monitor, fleet match panel, Leaflet map, and AI brief panels. |
 | **Backend API Gateway** | Python 3.11+, FastAPI, Pydantic v2, Uvicorn | High-performance RESTful API orchestrating analytical engines, parameter validation, and client routing. |
 | **Risk Scoring Engine** | Python, NumPy, Pandas | Deterministic multi-variable risk calculator generating normalized (0–100) scores for shipments, corridors, and delays. |
-| **Optimization Engine** | Python, Scipy / Google OR-Tools | Multi-objective routing, carrier ranking, and idle fleet redeployment matcher based on distance, cargo suitability, and SLA bounds. |
-| **Cold-Chain Engine** | Python, Time-Series Algorithms | Evaluates telematics streams against cargo temperature bounds; computes excursion durations and predictive environmental heat loads. |
-| **watsonx.ai Integration** | `ibm-watsonx-ai` SDK, IBM Granite 3.0 | Translates structured engine metrics into executive summaries, action plans, and natural language explanations without hallucinations. |
-| **MCP Server** | Python MCP SDK (stdio / SSE) | Exposes 10 operational supply-chain tools to IBM Bob, enabling autonomous inquiry and dispatch action. |
-| **Geospatial Database** | PostgreSQL 16 + PostGIS 3.4 / GeoAlchemy2 | Stores spatial routes, geofences, waypoint geometries, and handles spatial corridor intersection queries. |
+| **Optimization Engine** | Pure-Python min-max normalization | Multi-objective routing score and idle fleet redeployment matcher based on distance, cargo suitability, and weather/disruption factors. |
+| **Cold-Chain Engine** | Python, time-series comparison | Evaluates telematics streams against cargo temperature bounds; computes excursion durations and classifies severity against regulatory cargo rules. |
+| **watsonx.ai Integration** | `ibm-watsonx-ai` SDK, IBM Granite 3.0 | Translates structured engine metrics into executive summaries, action plans, and natural language explanations without hallucinations; deterministic fallback when credentials absent. |
+| **MCP Server** | Python MCP SDK (stdio transport) | Exposes 10 operational supply-chain tools to IBM Bob, enabling autonomous inquiry and dispatch action. |
+| **Database** | SQLite + SQLAlchemy 2.0 | Stores shipments, fleet, telemetry, routes, disruptions, weather, cargo rules. *PostgreSQL + PostGIS is a documented future roadmap item for polygon-based geofencing.* |
 
 ---
 
@@ -83,25 +83,25 @@ sequenceDiagram
     CC->>CC: Detect out-of-range sensor readings & predict thermal exposure
     
     Note over Dispatcher,FE: 2. Disruption Trigger & Detection
-    Dispatcher->>FE: Inspect active Mumbai Port Strike / Extreme Heat alert
-    FE->>API: GET /api/disruptions/D01/impact
-    API->>FE: Return affected shipments [S204, S102] with elevated risk scores
+    Dispatcher->>FE: Inspect active Winter Storm DIS-501 / Cold-Chain Excursion SHP-1002
+    FE->>API: GET /api/disruptions/DIS-501/affected-shipments
+    API->>FE: Return affected shipments near DIS-501 with elevated risk scores
     
     Note over FE,OPT: 3. Automated Mitigation & Optimization
-    FE->>API: POST /api/shipments/S204/optimize-route
-    API->>OPT: Compute feasible routes, carriers & idle fleet matches
-    OPT->>API: Return Ranked Routes (R2 bypass) & Redeployment (TRK-102 reefer)
+    FE->>API: GET /api/shipments/SHP-1002/routes
+    API->>OPT: Compute feasible route scores and fleet match
+    OPT->>API: Return route recommendations and fleet-match result for SHP-1002
     
     Note over API,AI: 4. Narrative Synthesis
-    API->>AI: Generate explanation for S204 reroute & reefer transfer
+    API->>AI: Generate explanation for SHP-1002 disruption risk
     AI->>API: Return auditable natural language operational rationale
-    API->>FE: Display recommendation card with trade-off metrics
+    API->>FE: Display AI brief panel with headline and recommended action
     
     Note over Bob,MCP: 5. Agentic Co-Pilot Inquiry
-    Bob->>MCP: Call tool: get_shipment_risk(shipment_id="S204")
-    MCP->>API: Fetch live evaluation
-    API->>MCP: Return structured telemetry & predictive heat exposure
-    Bob->>Dispatcher: Deliver actionable advice & confirm reroute execution
+    Bob->>MCP: Call tool: evaluate_shipment_risk(shipment_id="SHP-1002")
+    MCP->>API: Fetch live risk evaluation
+    API->>MCP: Return structured risk score and sub-scores
+    Bob->>Dispatcher: Deliver actionable risk assessment and mitigation options
 ```
 
 ---

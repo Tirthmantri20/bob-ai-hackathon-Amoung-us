@@ -24,7 +24,7 @@ export default function DisruptionImpactPanel({
 }: DisruptionImpactPanelProps) {
   if (!disruption) {
     return (
-      <p className="text-sm text-gray-500 py-4 text-center">
+      <p className="text-sm text-slate-500 py-4 text-center">
         Select a disruption to view impact.
       </p>
     )
@@ -34,41 +34,41 @@ export default function DisruptionImpactPanel({
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between flex-wrap gap-2">
+      <div className="flex items-center justify-between flex-wrap gap-2 border-b border-slate-200 pb-3">
         <div>
-          <h3 className="font-semibold text-white">{disruption.title}</h3>
-          <p className="text-xs text-gray-400">{disruption.id}</p>
+          <h3 className="font-bold text-slate-900 text-base">{disruption.title}</h3>
+          <p className="text-xs text-slate-500 font-mono font-medium">{disruption.id}</p>
         </div>
         <SeverityBadge severity={disruption.severity} size="md" />
       </div>
 
       {impact && (
         <>
-          <p className="text-xs text-gray-400">
-            Impact radius:{' '}
-            <strong className="text-gray-200">{impact.proximity_radius_km} km</strong>
+          <p className="text-xs text-slate-600 font-medium">
+            Proximity Impact Radius:{' '}
+            <strong className="text-slate-900 font-bold">{impact.proximity_radius_km} km</strong>
           </p>
 
           {impact.affected_shipments.length === 0 ? (
-            <div className="rounded-md bg-gray-800 border border-gray-700 px-4 py-3 text-sm text-gray-400">
-              No active shipments within the {impact.proximity_radius_km} km impact radius.
+            <div className="rounded-lg bg-slate-50 border border-slate-200 px-4 py-3 text-sm text-slate-600">
+              No active shipments currently intersect the {impact.proximity_radius_km} km impact radius.
             </div>
           ) : (
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-2">
+              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
                 Affected Shipments ({impact.affected_shipments.length})
               </p>
-              <div className="space-y-1">
+              <div className="space-y-1.5">
                 {impact.affected_shipments.map((s) => (
                   <div
                     key={s.shipment_id}
-                    className="flex items-center justify-between rounded bg-gray-800 px-3 py-2 text-sm"
+                    className="flex items-center justify-between rounded-lg bg-slate-50 border border-slate-200 px-3.5 py-2.5 text-sm shadow-xs"
                   >
                     <div className="flex items-center gap-2">
-                      <span className="font-mono font-semibold text-white">{s.shipment_id}</span>
+                      <span className="font-mono font-bold text-slate-900">{s.shipment_id}</span>
                       <StatusBadge status={s.shipment_status} />
                     </div>
-                    <span className="text-xs text-gray-400">
+                    <span className="text-xs text-slate-500 font-semibold">
                       {s.distance_km.toFixed(0)} km away
                     </span>
                   </div>
@@ -81,9 +81,10 @@ export default function DisruptionImpactPanel({
 
       <button
         onClick={onRequestAIBrief}
-        className="w-full rounded-lg bg-blue-700 px-4 py-3 text-sm font-semibold text-white
-                   hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400
-                   transition-colors"
+        className="w-full rounded-xl bg-blue-600 px-4 py-3 text-sm font-bold text-white
+                   hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400
+                   shadow-sm transition-all"
+        aria-label={`Get AI Brief for ${disruption.id}`}
       >
         🤖 Get AI Brief for {disruption.id}
       </button>

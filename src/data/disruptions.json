@@ -43,5 +43,710 @@
       "lat": 40.6895,
       "lon": -74.1745
     }
+  },
+  {
+    "id": "DIS-504",
+    "type": "SEVERE_WEATHER",
+    "severity": "HIGH",
+    "title": "Heavy Snowfall Warning - Donner Pass",
+    "affected_corridor": "I-80 Eastbound",
+    "start_time": "2026-09-14T02:00:00Z",
+    "expected_end_time": "2026-09-15T12:00:00Z",
+    "impact_delay_hours": 12.0,
+    "recommended_reroute": "US-50 via South Lake Tahoe",
+    "coordinates": {
+      "lat": 39.3399,
+      "lon": -120.2422
+    }
+  },
+  {
+    "id": "DIS-505",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "LOW",
+    "title": "Lane Reduction for Bridge Maintenance",
+    "affected_corridor": "I-95 Northbound",
+    "start_time": "2026-09-14T05:00:00Z",
+    "expected_end_time": "2026-09-14T18:00:00Z",
+    "impact_delay_hours": 1.5,
+    "recommended_reroute": "US-1 North",
+    "coordinates": {
+      "lat": 40.2101,
+      "lon": -74.7429
+    }
+  },
+  {
+    "id": "DIS-506",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "HIGH",
+    "title": "Multi-Vehicle Collision Blocking Freight Lanes",
+    "affected_corridor": "I-5 Northbound",
+    "start_time": "2026-09-14T07:30:00Z",
+    "expected_end_time": "2026-09-14T13:00:00Z",
+    "impact_delay_hours": 4.5,
+    "recommended_reroute": "US-99 North",
+    "coordinates": {
+      "lat": 38.5816,
+      "lon": -121.4944
+    }
+  },
+  {
+    "id": "DIS-507",
+    "type": "PORT_CONTAINER_HOLD",
+    "severity": "HIGH",
+    "title": "Container Yard Congestion at Long Beach Terminal",
+    "affected_corridor": "Port of Long Beach Terminal 6",
+    "start_time": "2026-09-14T08:00:00Z",
+    "expected_end_time": "2026-09-15T18:00:00Z",
+    "impact_delay_hours": 8.0,
+    "recommended_reroute": "Terminal 3 Priority Gate",
+    "coordinates": {
+      "lat": 33.7537,
+      "lon": -118.2162
+    }
+  },
+  {
+    "id": "DIS-508",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "MEDIUM",
+    "title": "Interstate Expansion Work Near Nashville",
+    "affected_corridor": "I-24 Westbound",
+    "start_time": "2026-09-14T06:00:00Z",
+    "expected_end_time": "2026-09-14T22:00:00Z",
+    "impact_delay_hours": 3.0,
+    "recommended_reroute": "US-41 South",
+    "coordinates": {
+      "lat": 36.1255,
+      "lon": -86.6856
+    }
+  },
+  {
+    "id": "DIS-509",
+    "type": "SEVERE_WEATHER",
+    "severity": "CRITICAL",
+    "title": "Flash Flood Warning - Houston Freight Corridor",
+    "affected_corridor": "I-10 Eastbound",
+    "start_time": "2026-09-14T03:00:00Z",
+    "expected_end_time": "2026-09-15T08:00:00Z",
+    "impact_delay_hours": 14.0,
+    "recommended_reroute": "US-90 Alternate",
+    "coordinates": {
+      "lat": 29.7604,
+      "lon": -95.3698
+    }
+  },
+  {
+    "id": "DIS-510",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "MEDIUM",
+    "title": "Overturned Refrigerated Truck Causing Lane Closure",
+    "affected_corridor": "I-75 Northbound",
+    "start_time": "2026-09-14T09:00:00Z",
+    "expected_end_time": "2026-09-14T14:00:00Z",
+    "impact_delay_hours": 3.5,
+    "recommended_reroute": "US-41 North",
+    "coordinates": {
+      "lat": 27.9506,
+      "lon": -82.4572
+    }
+  },
+  {
+    "id": "DIS-511",
+    "type": "PORT_CONTAINER_HOLD",
+    "severity": "MEDIUM",
+    "title": "Port Gate Processing System Outage",
+    "affected_corridor": "Port of Savannah Gate 2",
+    "start_time": "2026-09-14T11:00:00Z",
+    "expected_end_time": "2026-09-14T17:00:00Z",
+    "impact_delay_hours": 3.0,
+    "recommended_reroute": "Gate 5 Priority Processing",
+    "coordinates": {
+      "lat": 32.0809,
+      "lon": -81.0912
+    }
+  },
+  {
+    "id": "DIS-512",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "HIGH",
+    "title": "Emergency Pavement Repair on I-70",
+    "affected_corridor": "I-70 Eastbound",
+    "start_time": "2026-09-14T04:00:00Z",
+    "expected_end_time": "2026-09-15T04:00:00Z",
+    "impact_delay_hours": 6.0,
+    "recommended_reroute": "US-40 East",
+    "coordinates": {
+      "lat": 39.0997,
+      "lon": -94.5786
+    }
+  },
+  {
+    "id": "DIS-513",
+    "type": "SEVERE_WEATHER",
+    "severity": "HIGH",
+    "title": "Hurricane Wind Advisory Affecting Gulf Freight",
+    "affected_corridor": "I-45 Southbound",
+    "start_time": "2026-09-14T12:00:00Z",
+    "expected_end_time": "2026-09-16T06:00:00Z",
+    "impact_delay_hours": 10.0,
+    "recommended_reroute": "US-59 South",
+    "coordinates": {
+      "lat": 29.3013,
+      "lon": -94.7977
+    }
+  },
+  {
+    "id": "DIS-514",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "MEDIUM",
+    "title": "Nighttime Tunnel Rehabilitation",
+    "affected_corridor": "I-90 Westbound",
+    "start_time": "2026-09-14T18:00:00Z",
+    "expected_end_time": "2026-09-15T05:00:00Z",
+    "impact_delay_hours": 2.0,
+    "recommended_reroute": "US-20 West",
+    "coordinates": {
+      "lat": 42.3314,
+      "lon": -83.0458
+    }
+  },
+  {
+    "id": "DIS-515",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "CRITICAL",
+    "title": "Hazardous Material Spill on Freight Route",
+    "affected_corridor": "I-40 Eastbound",
+    "start_time": "2026-09-14T10:00:00Z",
+    "expected_end_time": "2026-09-14T20:00:00Z",
+    "impact_delay_hours": 8.0,
+    "recommended_reroute": "US-70 East",
+    "coordinates": {
+      "lat": 35.2271,
+      "lon": -80.8431
+    }
+  },
+  {
+    "id": "DIS-516",
+    "type": "PORT_CONTAINER_HOLD",
+    "severity": "HIGH",
+    "title": "Refrigerated Container Inspection Backlog",
+    "affected_corridor": "Port of Oakland Terminal 2",
+    "start_time": "2026-09-14T07:00:00Z",
+    "expected_end_time": "2026-09-15T15:00:00Z",
+    "impact_delay_hours": 7.0,
+    "recommended_reroute": "Terminal 4 Refrigerated Gate",
+    "coordinates": {
+      "lat": 37.7955,
+      "lon": -122.2799
+    }
+  },
+  {
+    "id": "DIS-517",
+    "type": "SEVERE_WEATHER",
+    "severity": "MEDIUM",
+    "title": "Dense Fog Advisory on Interstate Freight Route",
+    "affected_corridor": "I-80 Westbound",
+    "start_time": "2026-09-14T04:30:00Z",
+    "expected_end_time": "2026-09-14T10:30:00Z",
+    "impact_delay_hours": 2.5,
+    "recommended_reroute": "US-30 West",
+    "coordinates": {
+      "lat": 41.2565,
+      "lon": -95.9345
+    }
+  },
+  {
+    "id": "DIS-518",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "LOW",
+    "title": "Shoulder Construction Near Distribution Hub",
+    "affected_corridor": "I-35 Northbound",
+    "start_time": "2026-09-14T09:00:00Z",
+    "expected_end_time": "2026-09-14T19:00:00Z",
+    "impact_delay_hours": 1.0,
+    "recommended_reroute": "US-77 North",
+    "coordinates": {
+      "lat": 35.4676,
+      "lon": -97.5164
+    }
+  },
+  {
+    "id": "DIS-519",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "HIGH",
+    "title": "Jackknifed Semi Blocks Two Freight Lanes",
+    "affected_corridor": "I-94 Eastbound",
+    "start_time": "2026-09-14T12:30:00Z",
+    "expected_end_time": "2026-09-14T17:30:00Z",
+    "impact_delay_hours": 4.0,
+    "recommended_reroute": "US-12 East",
+    "coordinates": {
+      "lat": 41.8781,
+      "lon": -87.6298
+    }
+  },
+  {
+    "id": "DIS-520",
+    "type": "PORT_CONTAINER_HOLD",
+    "severity": "CRITICAL",
+    "title": "Crane Operations Suspended Due to Mechanical Failure",
+    "affected_corridor": "Port of Houston Barbours Cut Terminal",
+    "start_time": "2026-09-14T13:00:00Z",
+    "expected_end_time": "2026-09-15T13:00:00Z",
+    "impact_delay_hours": 12.0,
+    "recommended_reroute": "Bayport Terminal Priority Gate",
+    "coordinates": {
+      "lat": 29.6816,
+      "lon": -95.0121
+    }
+  },
+  {
+    "id": "DIS-521",
+    "type": "SEVERE_WEATHER",
+    "severity": "HIGH",
+    "title": "Thunderstorm Warning Along I-35 Corridor",
+    "affected_corridor": "I-35 Southbound",
+    "start_time": "2026-09-14T15:00:00Z",
+    "expected_end_time": "2026-09-14T23:00:00Z",
+    "impact_delay_hours": 5.0,
+    "recommended_reroute": "US-183 South",
+    "coordinates": {
+      "lat": 30.2672,
+      "lon": -97.7431
+    }
+  },
+  {
+    "id": "DIS-522",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "MEDIUM",
+    "title": "Bridge Deck Replacement Project",
+    "affected_corridor": "I-81 Northbound",
+    "start_time": "2026-09-14T06:00:00Z",
+    "expected_end_time": "2026-09-16T18:00:00Z",
+    "impact_delay_hours": 3.5,
+    "recommended_reroute": "US-11 North",
+    "coordinates": {
+      "lat": 40.0379,
+      "lon": -76.3055
+    }
+  },
+  {
+    "id": "DIS-523",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "MEDIUM",
+    "title": "Refrigerated Trailer Collision Near Dallas",
+    "affected_corridor": "I-20 Eastbound",
+    "start_time": "2026-09-14T16:00:00Z",
+    "expected_end_time": "2026-09-14T21:00:00Z",
+    "impact_delay_hours": 3.0,
+    "recommended_reroute": "US-80 East",
+    "coordinates": {
+      "lat": 32.7767,
+      "lon": -96.7970
+    }
+  },
+  {
+    "id": "DIS-524",
+    "type": "PORT_CONTAINER_HOLD",
+    "severity": "HIGH",
+    "title": "Customs Clearance Queue at Baltimore Terminal",
+    "affected_corridor": "Port of Baltimore Dundalk Marine Terminal",
+    "start_time": "2026-09-14T09:00:00Z",
+    "expected_end_time": "2026-09-15T12:00:00Z",
+    "impact_delay_hours": 8.0,
+    "recommended_reroute": "Seagirt Marine Terminal Priority Lane",
+    "coordinates": {
+      "lat": 39.2488,
+      "lon": -76.5794
+    }
+  },
+  {
+    "id": "DIS-525",
+    "type": "SEVERE_WEATHER",
+    "severity": "MEDIUM",
+    "title": "High Wind Advisory Affecting Mountain Route",
+    "affected_corridor": "I-70 Westbound",
+    "start_time": "2026-09-14T17:00:00Z",
+    "expected_end_time": "2026-09-15T08:00:00Z",
+    "impact_delay_hours": 4.0,
+    "recommended_reroute": "US-40 West",
+    "coordinates": {
+      "lat": 39.7392,
+      "lon": -104.9903
+    }
+  },
+  {
+    "id": "DIS-526",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "HIGH",
+    "title": "Major Interchange Reconstruction",
+    "affected_corridor": "I-285 Northbound",
+    "start_time": "2026-09-14T05:00:00Z",
+    "expected_end_time": "2026-09-15T05:00:00Z",
+    "impact_delay_hours": 6.5,
+    "recommended_reroute": "GA-400 North",
+    "coordinates": {
+      "lat": 33.8480,
+      "lon": -84.3735
+    }
+  },
+  {
+    "id": "DIS-527",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "HIGH",
+    "title": "Multi-Truck Collision Closes Freight Corridor",
+    "affected_corridor": "I-10 Westbound",
+    "start_time": "2026-09-14T18:00:00Z",
+    "expected_end_time": "2026-09-15T02:00:00Z",
+    "impact_delay_hours": 6.0,
+    "recommended_reroute": "US-60 West",
+    "coordinates": {
+      "lat": 33.4484,
+      "lon": -112.0740
+    }
+  },
+  {
+    "id": "DIS-528",
+    "type": "PORT_CONTAINER_HOLD",
+    "severity": "MEDIUM",
+    "title": "Terminal Appointment System Delays",
+    "affected_corridor": "Port of Charleston Wando Terminal",
+    "start_time": "2026-09-14T14:00:00Z",
+    "expected_end_time": "2026-09-15T10:00:00Z",
+    "impact_delay_hours": 5.0,
+    "recommended_reroute": "North Charleston Priority Gate",
+    "coordinates": {
+      "lat": 32.8215,
+      "lon": -79.9342
+    }
+  },
+  {
+    "id": "DIS-529",
+    "type": "SEVERE_WEATHER",
+    "severity": "CRITICAL",
+    "title": "Flash Flooding Closes Low-Lying Freight Route",
+    "affected_corridor": "I-64 Eastbound",
+    "start_time": "2026-09-14T20:00:00Z",
+    "expected_end_time": "2026-09-15T14:00:00Z",
+    "impact_delay_hours": 10.0,
+    "recommended_reroute": "US-60 East",
+    "coordinates": {
+      "lat": 38.2527,
+      "lon": -85.7585
+    }
+  },
+  {
+    "id": "DIS-530",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "LOW",
+    "title": "Overnight Lane Closure for Asphalt Repairs",
+    "affected_corridor": "I-15 Northbound",
+    "start_time": "2026-09-14T22:00:00Z",
+    "expected_end_time": "2026-09-15T06:00:00Z",
+    "impact_delay_hours": 1.5,
+    "recommended_reroute": "US-89 North",
+    "coordinates": {
+      "lat": 40.7608,
+      "lon": -111.8910
+    }
+  },
+  {
+    "id": "DIS-531",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "MEDIUM",
+    "title": "Freight Vehicle Collision Near St. Louis",
+    "affected_corridor": "I-70 Eastbound",
+    "start_time": "2026-09-14T19:00:00Z",
+    "expected_end_time": "2026-09-15T00:00:00Z",
+    "impact_delay_hours": 3.0,
+    "recommended_reroute": "US-40 East",
+    "coordinates": {
+      "lat": 38.6270,
+      "lon": -90.1994
+    }
+  },
+  {
+    "id": "DIS-532",
+    "type": "PORT_CONTAINER_HOLD",
+    "severity": "HIGH",
+    "title": "Reefer Container Power Supply Failure",
+    "affected_corridor": "Port of Miami Terminal F",
+    "start_time": "2026-09-14T16:00:00Z",
+    "expected_end_time": "2026-09-15T08:00:00Z",
+    "impact_delay_hours": 7.0,
+    "recommended_reroute": "Terminal J Refrigerated Priority Lane",
+    "coordinates": {
+      "lat": 25.7743,
+      "lon": -80.1700
+    }
+  },
+  {
+    "id": "DIS-533",
+    "type": "SEVERE_WEATHER",
+    "severity": "HIGH",
+    "title": "Severe Thunderstorm Activity Near Memphis",
+    "affected_corridor": "I-40 Westbound",
+    "start_time": "2026-09-14T21:00:00Z",
+    "expected_end_time": "2026-09-15T04:00:00Z",
+    "impact_delay_hours": 4.0,
+    "recommended_reroute": "US-64 West",
+    "coordinates": {
+      "lat": 35.1495,
+      "lon": -90.0490
+    }
+  },
+  {
+    "id": "DIS-534",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "MEDIUM",
+    "title": "Freight Lane Closure for Pavement Resurfacing",
+    "affected_corridor": "I-55 Northbound",
+    "start_time": "2026-09-15T06:00:00Z",
+    "expected_end_time": "2026-09-15T20:00:00Z",
+    "impact_delay_hours": 2.5,
+    "recommended_reroute": "US-61 North",
+    "coordinates": {
+      "lat": 38.6270,
+      "lon": -90.1994
+    }
+  },
+  {
+    "id": "DIS-535",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "CRITICAL",
+    "title": "Major Collision Blocks Interstate Freight Traffic",
+    "affected_corridor": "I-95 Southbound",
+    "start_time": "2026-09-15T07:00:00Z",
+    "expected_end_time": "2026-09-15T15:00:00Z",
+    "impact_delay_hours": 7.0,
+    "recommended_reroute": "US-17 South",
+    "coordinates": {
+      "lat": 35.7796,
+      "lon": -78.6382
+    }
+  },
+  {
+    "id": "DIS-536",
+    "type": "PORT_CONTAINER_HOLD",
+    "severity": "MEDIUM",
+    "title": "Gate Congestion at Seattle Container Terminal",
+    "affected_corridor": "Port of Seattle Terminal 18",
+    "start_time": "2026-09-15T08:00:00Z",
+    "expected_end_time": "2026-09-15T18:00:00Z",
+    "impact_delay_hours": 4.0,
+    "recommended_reroute": "Terminal 46 Priority Gate",
+    "coordinates": {
+      "lat": 47.5965,
+      "lon": -122.3328
+    }
+  },
+  {
+    "id": "DIS-537",
+    "type": "SEVERE_WEATHER",
+    "severity": "HIGH",
+    "title": "Tropical Storm Conditions Affecting Coastal Freight",
+    "affected_corridor": "I-95 Northbound",
+    "start_time": "2026-09-15T03:00:00Z",
+    "expected_end_time": "2026-09-16T03:00:00Z",
+    "impact_delay_hours": 9.0,
+    "recommended_reroute": "US-1 North",
+    "coordinates": {
+      "lat": 32.7765,
+      "lon": -79.9311
+    }
+  },
+  {
+    "id": "DIS-538",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "LOW",
+    "title": "Utility Work Reduces Freight Capacity",
+    "affected_corridor": "I-91 Southbound",
+    "start_time": "2026-09-15T06:00:00Z",
+    "expected_end_time": "2026-09-15T18:00:00Z",
+    "impact_delay_hours": 1.2,
+    "recommended_reroute": "US-5 South",
+    "coordinates": {
+      "lat": 42.2626,
+      "lon": -72.5787
+    }
+  },
+  {
+    "id": "DIS-539",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "HIGH",
+    "title": "Trailer Fire Causes Interstate Closure",
+    "affected_corridor": "I-75 Southbound",
+    "start_time": "2026-09-15T09:30:00Z",
+    "expected_end_time": "2026-09-15T16:00:00Z",
+    "impact_delay_hours": 5.5,
+    "recommended_reroute": "US-23 South",
+    "coordinates": {
+      "lat": 39.9612,
+      "lon": -82.9988
+    }
+  },
+  {
+    "id": "DIS-540",
+    "type": "PORT_CONTAINER_HOLD",
+    "severity": "CRITICAL",
+    "title": "Terminal Operating System Failure",
+    "affected_corridor": "Port of Los Angeles Pier 400",
+    "start_time": "2026-09-15T11:00:00Z",
+    "expected_end_time": "2026-09-15T19:00:00Z",
+    "impact_delay_hours": 9.0,
+    "recommended_reroute": "Pier 300 Priority Gate",
+    "coordinates": {
+      "lat": 33.7310,
+      "lon": -118.2634
+    }
+  },
+  {
+    "id": "DIS-541",
+    "type": "SEVERE_WEATHER",
+    "severity": "MEDIUM",
+    "title": "Heavy Rain and Reduced Visibility",
+    "affected_corridor": "I-85 Southbound",
+    "start_time": "2026-09-15T12:00:00Z",
+    "expected_end_time": "2026-09-15T20:00:00Z",
+    "impact_delay_hours": 3.0,
+    "recommended_reroute": "US-29 South",
+    "coordinates": {
+      "lat": 34.8526,
+      "lon": -82.3940
+    }
+  },
+  {
+    "id": "DIS-542",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "HIGH",
+    "title": "Major Bridge Rehabilitation Project",
+    "affected_corridor": "I-5 Southbound",
+    "start_time": "2026-09-15T05:00:00Z",
+    "expected_end_time": "2026-09-16T05:00:00Z",
+    "impact_delay_hours": 5.0,
+    "recommended_reroute": "CA-99 South",
+    "coordinates": {
+      "lat": 34.0522,
+      "lon": -118.2437
+    }
+  },
+  {
+    "id": "DIS-543",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "MEDIUM",
+    "title": "Multiple Vehicle Crash Near Freight Distribution Zone",
+    "affected_corridor": "I-35 Northbound",
+    "start_time": "2026-09-15T14:00:00Z",
+    "expected_end_time": "2026-09-15T19:00:00Z",
+    "impact_delay_hours": 2.5,
+    "recommended_reroute": "US-81 North",
+    "coordinates": {
+      "lat": 39.0997,
+      "lon": -94.5786
+    }
+  },
+  {
+    "id": "DIS-544",
+    "type": "PORT_CONTAINER_HOLD",
+    "severity": "HIGH",
+    "title": "Customs Examination Queue at Port Terminal",
+    "affected_corridor": "Port of New York Container Terminal",
+    "start_time": "2026-09-15T10:00:00Z",
+    "expected_end_time": "2026-09-16T10:00:00Z",
+    "impact_delay_hours": 8.5,
+    "recommended_reroute": "Priority Customs Inspection Lane",
+    "coordinates": {
+      "lat": 40.6840,
+      "lon": -74.1502
+    }
+  },
+  {
+    "id": "DIS-545",
+    "type": "SEVERE_WEATHER",
+    "severity": "CRITICAL",
+    "title": "Coastal Storm Forces Temporary Freight Closure",
+    "affected_corridor": "I-95 Southbound",
+    "start_time": "2026-09-15T16:00:00Z",
+    "expected_end_time": "2026-09-16T12:00:00Z",
+    "impact_delay_hours": 13.0,
+    "recommended_reroute": "US-301 South",
+    "coordinates": {
+      "lat": 36.8529,
+      "lon": -75.9780
+    }
+  },
+  {
+    "id": "DIS-546",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "MEDIUM",
+    "title": "Interstate Median Reconstruction",
+    "affected_corridor": "I-65 Northbound",
+    "start_time": "2026-09-15T07:00:00Z",
+    "expected_end_time": "2026-09-15T21:00:00Z",
+    "impact_delay_hours": 2.8,
+    "recommended_reroute": "US-31 North",
+    "coordinates": {
+      "lat": 38.2527,
+      "lon": -85.7585
+    }
+  },
+  {
+    "id": "DIS-547",
+    "type": "TRAFFIC_ACCIDENT",
+    "severity": "HIGH",
+    "title": "Hazmat Truck Collision Near Industrial Corridor",
+    "affected_corridor": "I-85 Northbound",
+    "start_time": "2026-09-15T18:00:00Z",
+    "expected_end_time": "2026-09-16T02:00:00Z",
+    "impact_delay_hours": 6.5,
+    "recommended_reroute": "US-29 North",
+    "coordinates": {
+      "lat": 33.7490,
+      "lon": -84.3880
+    }
+  },
+  {
+    "id": "DIS-548",
+    "type": "PORT_CONTAINER_HOLD",
+    "severity": "MEDIUM",
+    "title": "Reefer Plug Availability Shortage",
+    "affected_corridor": "Port of Tacoma Terminal 3",
+    "start_time": "2026-09-15T12:00:00Z",
+    "expected_end_time": "2026-09-16T06:00:00Z",
+    "impact_delay_hours": 5.5,
+    "recommended_reroute": "Terminal 4 Refrigerated Yard",
+    "coordinates": {
+      "lat": 47.2560,
+      "lon": -122.4370
+    }
+  },
+  {
+    "id": "DIS-549",
+    "type": "SEVERE_WEATHER",
+    "severity": "HIGH",
+    "title": "Extreme Heat Advisory for Refrigerated Freight",
+    "affected_corridor": "I-10 Eastbound",
+    "start_time": "2026-09-15T13:00:00Z",
+    "expected_end_time": "2026-09-16T01:00:00Z",
+    "impact_delay_hours": 3.5,
+    "recommended_reroute": "US-90 East",
+    "coordinates": {
+      "lat": 32.2226,
+      "lon": -110.9747
+    }
+  },
+  {
+    "id": "DIS-550",
+    "type": "ROADWORK_CONGESTION",
+    "severity": "LOW",
+    "title": "Routine Highway Maintenance and Lane Reduction",
+    "affected_corridor": "I-84 Eastbound",
+    "start_time": "2026-09-15T08:00:00Z",
+    "expected_end_time": "2026-09-15T18:00:00Z",
+    "impact_delay_hours": 1.3,
+    "recommended_reroute": "US-26 East",
+    "coordinates": {
+      "lat": 45.5152,
+      "lon": -122.6784
+    }
   }
 ]

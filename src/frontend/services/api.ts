@@ -67,6 +67,13 @@ export const api = {
   getShipment: (id: string) =>
     apiFetch<Shipment>(`/api/shipments/${id}`),
 
+  createShipment: (payload: Record<string, unknown>) =>
+    apiFetch<Shipment>('/api/shipments/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    }),
+
   /** Returns total_score 0–100 (engine scale). Use this for the risk gauge. */
   getShipmentRisk: (id: string) =>
     apiFetch<ShipmentRisk>(`/api/shipments/${id}/risk`),
@@ -88,12 +95,26 @@ export const api = {
   getDisruptions: () =>
     apiFetch<Disruption[]>('/api/disruptions/'),
 
+  createDisruption: (payload: Record<string, unknown>) =>
+    apiFetch<Disruption>('/api/disruptions/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    }),
+
   getDisruptionImpact: (id: string) =>
     apiFetch<DisruptionImpact>(`/api/disruptions/${id}/affected-shipments`),
 
   // ── Fleet ──────────────────────────────────────────────────────────────
   getFleetAssets: () =>
     apiFetch<FleetAsset[]>('/api/fleet/'),
+
+  createFleetAsset: (payload: Record<string, unknown>) =>
+    apiFetch<FleetAsset>('/api/fleet/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    }),
 
   // ── Routes catalog (map/display data — not optimizer output) ───────────
   getRoutes: () =>
